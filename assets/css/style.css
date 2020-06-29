@@ -1,0 +1,373 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header{
+    height: 647px;
+}
+
+body{
+    background: #ffffff;
+    width: 1349px;
+    max-width: 1349px;
+}
+
+nav{
+    background: #3B3737;
+    width: 100%;
+    height: 40px;
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-bottom: 10px;
+    position: relative; /*al terminar probar con position:fixed; */
+    z-index: 2;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a:hover{
+    color: #6aaaf3;
+}
+nav ul li a{
+    color: #ffffff;
+    margin-right: 15px;
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 16px;
+    position: relative;
+    bottom: 3px;
+}
+
+.principal{
+    background: #E5E5E5;
+    position: relative;
+    bottom: 320px;
+    height: 628px;
+}
+
+.principal img{
+    position: relative;
+    top: 85px;
+}
+
+.principal p{
+    color: #ffffff;
+    font-size: 50px;
+    position: relative;
+    left: 750px;
+    bottom: 500px;
+    z-index: 3;
+    width: 600px;
+    margin-bottom: 450px;
+    text-align: center;
+}
+
+.pc{
+    background: linear-gradient(to left, #2e5aeccb, #8691b711);
+    width: 100%;
+    height: 608px;
+    position: relative;
+    bottom: 1558px;
+    z-index: 2;
+}
+
+.logo{
+    width: 500px;
+    position: relative;
+    top: 150px;
+    left: 770px;
+    z-index: 4;
+}
+
+.vm a{
+    color: #ffffff;
+    font-size: 25px;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    padding: 2px 18px;
+    position: relative;
+    bottom: 15px;
+}
+
+.sn{
+    background: #fff;
+    padding: 0px 90px;
+    font-size: 20px;
+    color: #3B3737;
+}
+
+.sn img{
+    width: 400px;
+    margin-left: 400px;
+}
+
+.center{
+    text-align: center;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 50px;
+    margin: 30px 0px;
+}
+
+.recomendaciones{
+    color: #3B3737;
+    background: #E5E5E5;
+    font-size: 25px;
+    height: 860px;
+}
+
+.tarjeta{
+    width: 254px;
+    height: 210px;
+    float: left;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    position: relative;
+    left: 186px;
+    top: 100px;
+}
+
+.tarjeta img{
+    width: 254px;
+    height: 210px;
+    border-radius: 55px 55px 0px 0px;
+}
+
+.tarjeta p{
+    border-radius: 0px 0px 55px 55px;
+    background: #3b3737;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: -7px;
+    padding: 8px;
+}
+
+.inf{
+    font-size: 20px;
+    color: #3B3737;
+    background: linear-gradient(to bottom, #73aaf3d5, #73aaf3d5, #73aaf3d5, #10438298);
+    margin: -7px 0px;
+    padding: 0px 100px;
+}
+
+.inf p{
+    margin: 5px 40px;
+}
+
+.inf p{
+    margin-bottom: 20px;
+}
+
+.imgcontacto{
+    border-radius: 40px;
+    width: 700px;
+    box-shadow: 48px 37px 28px rgba(0, 0, 0, 0.651);
+    margin-bottom: 30px;
+}
+
+.floatleft{
+    float: right;
+}
+
+.imges{
+    width: 400px;
+    margin-left: 800px;
+}
+footer{
+    background: #000;
+    color: #ffffff;
+    padding: 5px 0px;
+}
+#empleados{
+    width: 800px;
+    height: 500px;
+    padding-left: 100px;
+}
+.perfil{
+    background: #DCDCDC;
+    width: 300px;
+    height: 385px;
+    border-radius: 32px;
+    margin-left: 25px;
+    margin-top: 25px;
+    padding-top: 44px;
+   /* padding-left: 75px;*/
+    text-align: center;
+}
+
+.perfil p{
+    padding-bottom: 10px;
+}
+
+.perfil img{
+    width: 150px;
+    padding-bottom: 20px;
+}
+
+.perfil input{
+    margin-top: 30px;
+    border: 1px solid #2E59EC;
+    border-radius: 50px;
+    background: transparent;
+    color: #2E59EC;
+    padding: 8px 5px;
+    font-size: 15px;
+}
+
+#bnu{
+    color: #fff;
+    font-size: 25px;
+    text-shadow: 1px 0px 1px #000;
+}
+
+#dateu{
+    font-size: 22px;
+    color: #2E59EC;
+}
+
+.op{
+    position: relative;
+    left: 400px;
+    bottom: 300px;
+    height: 320px;
+}
+#verde{
+    display: block;
+    color: #fff;
+    background: #5ADB1B;
+    width: 300px;
+    font-size: 25px;
+    border: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+   /* margin-left: 400px;*/
+}
+
+#verde:hover{
+    background:#54ca19;
+}
+
+#amarillo{
+    display: block;
+    color: #fff;
+    background: #DBAE1B;
+    width: 300px;
+    font-size: 25px;
+    border: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#amarillo:hover{
+    background: #c9a019;
+}
+
+#rojo{
+    display: block;
+    color: #fff;
+    background: #DB1B1B;
+    width: 300px;
+    font-size: 25px;
+    border: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#rojo:hover{
+    background: #c01818;
+}
+
+#azul{
+    display: block;
+    color: #fff;
+    background: #2E59EC;
+    width: 300px;
+    font-size: 25px;
+    border: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#azul:hover{
+    background: #2a51d3;
+}
+
+.login{
+    margin-left: 250px;
+    position: relative;
+    bottom: 50px;
+}
+
+#usuario{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #2E59EC;
+    border-radius: 5px;
+    position: relative;
+    left: 275px;
+    bottom: 420px;
+}
+
+#pass{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #2E59EC;
+    border-radius: 5px;
+    position: relative;
+    left: 275px;
+    bottom: 390px;
+}
+
+#ingreso{
+    background: transparent;
+    font-size: 18px;
+    color: #2E59EC;
+    padding: 5px 12px;
+    border: 1px solid #2E59EC;
+    border-radius: 25px;
+    position: relative;
+    left: 325px;
+    bottom: 340px;
+    cursor: pointer;
+}
+
+#ingreso, #usuario, #pass:hover{
+    border: 1px solid #0f35b1;
+}
+
+.login p{
+    width: 300px;
+    color: #2E59EC;
+    font-size: 30px;
+    position: relative;
+    left: 290px;
+    top: 280px;
+}
+
+#loginA{
+    width: 100px;
+}
+
+.resgisVen{
+    background: #54ca19b6;
+}
+
+#regisVentas{
+    width: 450px;
+}
+
