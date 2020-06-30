@@ -1,6 +1,6 @@
 <?php require_once "../assets/includes/nav.php" ?>
     <div class="login">
-        <form action="login.php" id="loginA">
+        <form action="login.php" id="loginE">
 
             <strong><p class="center">Inicia sesión</p></strong>
         
@@ -10,7 +10,7 @@
 
                 <input type="password" name="pass" id="pass" placeholder="  ingresa tu contraseña">
 
-                <a href="../administrador/adindex.php" id="ingreso">Ingresar</a>
+                <a href="../empleados/epindex.php" id="ingreso">Ingresar</a>
                 
             </form>
         

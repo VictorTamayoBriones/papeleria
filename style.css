@@ -17,8 +17,8 @@ body{
     max-width: 1349px;
 }
 
-nav{
-    background: #3B3737;
+.barra{
+    background: #414141;
     width: 100%;
     height: 40px;
     padding-top: 12px;
@@ -27,13 +27,13 @@ nav{
     position: relative; /*al terminar probar con position:fixed; */
     z-index: 2;
 }
-nav ul li{
+.barra ul li{
     display: inline-block;
 }
-nav ul li a:hover{
-    color: #6aaaf3;
+.barra ul li a:hover{
+    color: #6aaaf3 !important;
 }
-nav ul li a{
+.barra ul li a{
     color: #ffffff;
     margin-right: 15px;
     display: inline-block;
@@ -121,6 +121,15 @@ nav ul li a{
     background: #E5E5E5;
     font-size: 25px;
     height: 860px;
+}
+
+.catalogo{
+    color: #3B3737;
+    background: #E5E5E5;
+    font-size: 25px;
+    height: 1500px;
+    position: relative;
+    bottom: 30px;
 }
 
 .tarjeta{
@@ -336,7 +345,7 @@ footer{
 #ingreso{
     background: transparent;
     font-size: 18px;
-    color: #2E59EC;
+    color: #2E59EC !important;
     padding: 5px 12px;
     border: 1px solid #2E59EC;
     border-radius: 25px;
@@ -344,6 +353,10 @@ footer{
     left: 325px;
     bottom: 340px;
     cursor: pointer;
+}
+
+.verpro{
+    height: 800px;
 }
 
 #ingreso, #usuario, #pass:hover{
@@ -355,7 +368,7 @@ footer{
     color: #2E59EC;
     font-size: 30px;
     position: relative;
-    left: 290px;
+    left: 220px;
     top: 280px;
 }
 
@@ -363,11 +376,111 @@ footer{
     width: 100px;
 }
 
+#loginE{
+    width: 100px; 
+}
 .resgisVen{
     background: #54ca19b6;
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    bottom: 30px;
 }
 
 #regisVentas{
-    width: 450px;
+    width: 550px;
+    background: #c5c1c188;
+    margin-left: 350px;
+    border-radius: 30px;
+    position: relative;
+    top: 100px;
 }
 
+
+
+.inpre{
+    background: rgb(255, 255, 255) !important;
+    width: 470px !important;
+    font-size: 18px !important;
+    border: transparent !important;
+    border-radius: 5px !important;
+    margin-right: 20px !important;
+    margin-left: 40px !important;
+    margin-bottom: 40px !important;
+
+}
+
+label{
+    color: #000!important;
+    font-size: 22px !important;
+}
+
+.insub1{
+    border: transparent;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-left: 50px;
+    margin-bottom: 20px;  
+    padding: 5px 12px; 
+    background: rgb(154, 221, 238); 
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.insub1:hover{
+    background: rgb(141, 202, 218);
+}
+
+a{
+    color: #fff !important;
+}
+
+.insub2{
+    border: transparent;
+    border-radius: 5px;
+    margin-right: 50px;
+    margin-left: 40px;
+    margin-bottom: 20px;  
+    padding: 5px 12px; 
+    position: relative; 
+    float: right;
+    background: rgb(154, 238, 175); 
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.insub2:hover{
+    background: rgb(139, 214, 158);
+}
+
+hr{
+    border: 1px solid #b1b1b1;
+}
+
+.f{
+    margin-left: 100px;
+}
+
+input[type=file]{
+    padding: 1px 5pxpx !important;
+    font-size: 10px !important;
+    margin: 5px 0px !important;
+}
+
+#la{
+    color: rgb(121, 121, 121);
+    font-size: 18px;
+}
+/*
+th{
+    padding: 5px 20px;
+    text-align:center;
+    border: 1px solid rgb(99, 98, 98);
+    border-left: none;
+    border-right: none;
+}
+
+td{
+    text-align:center;
+}
+*/

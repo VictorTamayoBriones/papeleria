@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Papeleria 3 + 3</title>
-    
+    <!--
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/style.css">
+    -->
     
-    <!--
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="../style.css">
-    -->
+    
+    <link rel="stylesheet" href="../materialize/css/materialize.css">
 
 </head>
 <body>
     <header>
-        <nav>
+        <div class="barra">
             <ul>
             <?= $direccion=""; $url="http://localhost/master-php/Proyecto/"?>
             
@@ -34,7 +35,7 @@
                 </li>
 
                 <li>
-                    <a href="#">Catalogo</a>
+                    <a href="catalogo.php">Catalogo</a>
                 </li>
 
                 <li>
@@ -45,4 +46,4 @@
                     <a href="#contacto">Contacto</a>
                 </li>
             </ul>
-        </nav>
+        </div>

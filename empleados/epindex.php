@@ -14,9 +14,7 @@
        
             <a href="rVentas.php" id="verde">Registrar ventas</a>
 
-            <a href="/veVentas.php" id="amarillo">Ver ventas</a>
-
-            <a href="/eVentas.php" id="rojo">Eliminar ventas</a>
+            <a href="veVentas.php" id="azul">Ver ventas</a>
         
         </div>
     </section>

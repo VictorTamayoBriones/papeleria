@@ -1,21 +1,24 @@
 <?php require_once "../assets/includes/nav.php" ?>
     <div class="resgisVen">
         <form action="regisVen.php" id="regisVentas">
-            <p>Registrar ventas</p>
+            <p class="titulo">Registrar ventas</p>
 
-            <input type="text" id="codigo" placeholder="    codigo">
+            <input class="inpre" type="text" id="codigo"    placeholder="   codigo del producto">
 
-            <input type="text" id="nombrePro" placeholder=" Nombre del producto">
+            <input class="inpre" type="text" id="nombrePro" placeholder="   Nombre del producto">
 
-            <input type="text" id="costo" placeholder="precio">
+            <input class="inpre" type="text" id="costo"     placeholder="   precio">
 
-            <input type="text" id="cantidad" placeholder="  Cantidad">
+            <input class="inpre" type="text" id="cantidad"   placeholder="  Cantidad">
 
-            <input type="text" id="folio" value="0001">
+            <br>
+            <br>
+            <label class="f" for="folio">Folio</label>
+            <input  class="inpre" type="text" id="folio" value="    0001">
 
-            <input type="button" value="Agregar producto">
+            <br>
+            <input class="insub1" type="button" value="Agregar producto">
 
-            <input type="button" value="Registrar venta">
+            <input class="insub2" type="button" value="Registrar venta">
         </form>
     </div>
-<?php require_once "../assets/includes/footer.php" ?>

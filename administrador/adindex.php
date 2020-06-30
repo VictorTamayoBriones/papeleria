@@ -12,13 +12,9 @@
 
         <div class="op">
 
-            <a href="#rProductos" id="verde">Registrar Productos</a>
+            <a href="regisProduct.php" id="verde">Registrar Productos</a>
 
-            <a href="#eProductos" id="amarillo">Editar prductos</a>
-
-            <a href="#eliProductos" id="rojo">Eliminar productos</a>
-
-            <a href="#viewProductos" id="azul">Ver productos</a>
+            <a href="verProduct.php" id="azul">Ver productos</a>
             
         
         </div>
