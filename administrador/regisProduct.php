@@ -8,14 +8,14 @@
                 
                     <div class="card-panel hoverable  col s12">
                         <div className="input-field ">
-                            <input className="container validate" type="text" placeholder="Nobre" name="nombre" required />
+                            <input className="container validate" type="text" placeholder="Nobre" name="nombre" required minlength="3" maxlength="60" pattern="[a-zA-Z0-9]+"/>
                         </div>
                     </div>
 
                
                     <div class="card-panel hoverable  col s5">
                         <div className="input-field ">
-                            <input className="container validate" type="text" placeholder="Código" name="codigo" required />
+                            <input className="container validate" type="text" placeholder="Código" name="codigo" required minlength="3" maxlength="60" pattern="[0-9]+"/>
                         </div>
                     </div>
                 
@@ -23,7 +23,7 @@
                 
                     <div class="card-panel hoverable col s5">
                         <div className="input-field ">
-                            <input className="container validate espacio" type="number" placeholder="Precio $" name="precio" required />
+                            <input className="container validate espacio" type="number" placeholder="Precio $" name="precio" required minlength="3" maxlength="60" pattern="[0-9]+"/>
                         </div>
                     </div>
                 
@@ -31,7 +31,7 @@
                 
                     <div class="card-panel hoverable  col s5">
                         <div className="input-field ">
-                            <input className="container validate" type="number" placeholder="Stock" name="stock" required />
+                            <input className="container validate" type="number" placeholder="Stock" name="stock" required minlength="3" maxlength="60" pattern="[0-9]+"/>
                         </div>
                     </div>
                 
