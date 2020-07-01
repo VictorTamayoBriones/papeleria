@@ -380,7 +380,7 @@ footer{
     width: 100px; 
 }
 .resgisVen{
-    background: #54ca19b6;
+    background: #ececec;
     width: 100%;
     height: 1000px;
     position: relative;
@@ -389,7 +389,7 @@ footer{
 
 #regisVentas{
     width: 550px;
-    background: #c5c1c188;
+    background: #807f7f88;
     margin-left: 350px;
     border-radius: 30px;
     position: relative;

@@ -7,7 +7,7 @@ if(isset($_POST)){
     $pass = $_POST['pass'];
 
     if($user == $_POST['usuario']="administrador"){
-        
+
         header ('location: ../administrador/adindex.php');
 
     }elseif($user == $_POST['usuario']="empleado1"){
