@@ -3,6 +3,8 @@
         <div class="catalogo">
             <p class="titulo">Catalogo de productos</p>
 
+            <input type="text" name="buscar" id="buscar" placeholder="Buscar...">
+            <input type="button" value="Categorias" id="categorias">
 
             <div class="tarjeta">
                 <img src="./assets/images/tarprueba.png" alt="">
