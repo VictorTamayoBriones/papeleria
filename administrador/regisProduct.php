@@ -1,14 +1,14 @@
 <?php require_once "../assets/includes/nav.php" ?>
 </br>
 <div class="container center" border-radius="55px" >
-    <form action="" class="container">
+    <form action="registroDeProductos.php"  method="POST" class="container">
             <div class="card-panel hoverable grey lighten-5">
                 <div class="row">
                     <h3>Registrar</h3>
                 
                     <div class="card-panel hoverable  col s12">
                         <div className="input-field ">
-                            <input className="container validate" type="text" placeholder="Nobre" name="nombre" required minlength="3" maxlength="60" pattern="[a-zA-Z0-9]+"/>
+                            <input className="container validate" type="text" placeholder="Nombre" name="nombre" required minlength="3" maxlength="60" pattern="[a-zA-Z0-9]+"/>
                         </div>
                     </div>
 
@@ -18,7 +18,13 @@
                             <input className="container validate" type="text" placeholder="Código" name="codigo" required minlength="3" maxlength="60" pattern="[0-9]+"/>
                         </div>
                     </div>
-                
+
+                    <div class="card-panel hoverable  col s12">
+                        <div className="input-field ">
+                            <input className="container validate" type="text" placeholder="ID_categoria" name="categoria" required minlength="3" maxlength="60" pattern="[a-zA-Z0-9]+"/>
+                        </div>
+                    </div>
+                    
                     <div class="conatiner col s2"></div>
                 
                     <div class="card-panel hoverable col s5">
@@ -45,7 +51,8 @@
                     </div>
 
                 </div>
-                <button class="btn-large center deep-blue hoverable " type="submit">Registrar Producto</button>
+            
+                <input type="submit" class="btn-large center deep-blue hoverable" name="registrar" value="Registrar Producto">
             </div>
         
     </form>

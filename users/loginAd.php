@@ -25,7 +25,7 @@
                 <input type="submit" name="ingreso" id="ingreso" <?php if(isset($_GET['error'])):?> value="Ingresar" <?php elseif(isset($_GET['falloDos'])):?> value="Ingresa"<?php endif ?> value="Entrar" <?php if(isset($_GET['3rr0r'])):?> disabled <?php endif ?>>
                     
                 <!--
-                <a href="../administrador/adindex.php" id="ingreso">Ingresar</a>
+                <a href="../administrador/adindex.php" id="ingreso">Ingresar</a>     
                 -->
                 
             </form>
