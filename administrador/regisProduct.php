@@ -21,7 +21,7 @@
 
                     <div class="card-panel hoverable  col s12">
                         <div className="input-field ">
-                            <input className="container validate" type="text" placeholder="ID_categoria" name="categoria" required minlength="3" maxlength="60" pattern="[a-zA-Z0-9]+"/>
+                            <input className="container validate" type="text" placeholder="categoria" name="categoria" required minlength="3" maxlength="60" pattern="[a-zA-Z0-9]+"/>
                         </div>
                     </div>
                     
