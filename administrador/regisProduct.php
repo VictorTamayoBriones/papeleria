@@ -12,8 +12,9 @@
                         </div>
                     </div>
 
-                    <div class="conatiner col s2"></div>
-                    <div class="card-panel hoverable  col s5">
+                    <div class="conatiner col s10"></div>
+
+                    <div class="card-panel hoverable  col s4">
                         <div className="input-field ">
                             <input className="container validate" type="text" placeholder="Código" name="codigo" required minlength="3" maxlength="60" pattern="[0-9]+"/>
                         </div>
@@ -25,7 +26,7 @@
                         </div>
                     </div>
                     
-                    <div class="conatiner col s2"></div>
+                    <div class="conatiner col s10"></div>
                 
                     <div class="card-panel hoverable col s5">
                         <div className="input-field ">
@@ -41,7 +42,7 @@
                         </div>
                     </div>
                 
-                    <div class="conatiner col s2"></div>
+                    <div class="conatiner col s3"></div>
                 
                     <div class="card-panel hoverable col s5">
                         <div className="input-field ">

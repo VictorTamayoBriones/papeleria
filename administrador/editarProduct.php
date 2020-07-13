@@ -5,6 +5,12 @@
             <div class="card-panel hoverable grey lighten-5">
                 <div class="row">
                     <h3>Editar</h3>
+                        <h6> Para editar coloque el ID del producto y llene los demás campos con el nuevo llenado </h6>
+                    <div class="card-panel hoverable col s5">
+                        <div className="input-field ">
+                            <input className="container validate espacio" type="number" placeholder="ID" name="ID" required minlength="1" maxlength="60" pattern="[0-9]+"/>
+                        </div>
+                    </div>
                 
                     <div class="card-panel hoverable  col s12">
                         <div className="input-field ">

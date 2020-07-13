@@ -4,8 +4,9 @@ require_once "../conexion.php";
 
 if(isset($_POST['actualizar']))
 {
-    if(strlen($_POST['nombre']) >=1 && strlen($_POST['codigo']) >=1 && strlen($_POST['categoria']) >=1 && strlen($_POST['stock']) >=1 && strlen($_POST['precio']))
+    if(strlen($_POST['ID']) >=1 && strlen($_POST['nombre']) >=1 && strlen($_POST['codigo']) >=1 && strlen($_POST['categoria']) >=1 && strlen($_POST['stock']) >=1 && strlen($_POST['precio']))
     {
+        $id= $_POST['ID'];
         $nombre= $_POST['nombre'];
         $codigo= $_POST['codigo'];
         $categoria= $_POST['categoria'];
@@ -15,11 +16,12 @@ if(isset($_POST['actualizar']))
 
         $modi= "UPDATE catalogo_p SET 
         nombre_articulo='$nombre',
+        codigo='$codigo',
         categoria='$categoria',
         stock='$stock',
         precio='$precio',
         imagen='$imagen'
-        WHERE codigo='$codigo'";
+        WHERE ID='$id'";
         $resultado= mysqli_query($conexion, $modi);
         if($resultado)
         {
