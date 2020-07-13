@@ -5,7 +5,6 @@
 <?php
 require_once "../conexion.php";
 ?>
-
 <table class="striped center">
         <thead>
           <tr>
@@ -19,7 +18,12 @@ require_once "../conexion.php";
           </tr>
         </thead>
     <?php
-        $consulta= "SELECT * FROM catalogo_p";
+    if(isset($_POST['buscar']))
+    {
+        if(strlen($_POST['codigo']) >=1)
+        {
+            $codigo=$_POST['codigo'];
+        $consulta= "SELECT * FROM catalogo_p where codigo=$codigo";
     $ejecutarconsulta= mysqli_query($conexion,$consulta);
     $verfilas= mysqli_num_rows($ejecutarconsulta);
     $fila= mysqli_fetch_array($ejecutarconsulta);
@@ -53,13 +57,11 @@ require_once "../conexion.php";
                 }
             }
         }
-
+    }
+}
     ?>
         
       </table>
-      <form method="get" action="buscar.php">
- <button margin-left="1%" type="submit">Continuar
-</form>
-<br>
+      
 </div>
 <?php require_once "../assets/includes/footer.php" ?>
