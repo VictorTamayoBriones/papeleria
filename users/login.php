@@ -16,7 +16,7 @@ if(isset($_POST)){
     
         }elseif($user == "empleado1" && $pass == "1234567890"){
     
-            header ('location: ../empleados/epindex');
+            header ('location: ../empleados/epindex.php');
     
         }else{
             header ('location: loginAd.php?error');
@@ -30,7 +30,7 @@ if(isset($_POST)){
     
         }elseif($user == "empleado1" && $pass == "1234567890"){
     
-            header ('location: ../empleados/epindex');
+            header ('location: ../empleados/epindex.php');
     
         }else{
             header ('location: loginAd.php?falloDos');
@@ -44,7 +44,7 @@ if(isset($_POST)){
     
         }elseif($user == "empleado1" && $pass == "1234567890"){
     
-            header ('location: ../empleados/epindex');
+            header ('location: ../empleados/epindex.php');
     
         }else{
             header ('location: loginAd.php?3rr0r');

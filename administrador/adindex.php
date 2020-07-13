@@ -16,6 +16,7 @@
 
             <a href="verProduct.php" id="azul">Ver productos</a>
             
+            <a href="editarProduct.php" id="amarillo">Editar Prodcutos</a>
         
         </div>
     </section>
