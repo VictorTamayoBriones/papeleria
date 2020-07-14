@@ -8,81 +8,54 @@
 }
 
 header{
-    height: 647px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
 }
 
 body{
     background: #ffffff;
-    width: 1349px;
-    max-width: 1349px;
+    width: 100%;
 }
-
+/*  Nabar   */
 .barra{
     background: #414141;
     width: 100%;
-    height: 40px;
-    padding-top: 12px;
-    padding-left: 12px;
-    padding-bottom: 10px;
-    position: relative; /*al terminar probar con position:fixed; */
-    z-index: 2;
+    padding: 8px 4px;
 }
-.barra ul li{
-    display: inline-block;
+
+.barra a{
+    color: #ffffff;
+    padding: 0 8px;
+    font-size: 16px;
 }
-.barra ul li a:hover{
+
+.barra a:hover{
     color: #6aaaf3 !important;
 }
-.barra ul li a{
-    color: #ffffff;
-    margin-right: 15px;
-    display: inline-block;
-    padding-right: 15px;
-    font-size: 100%;
-    position: relative;
-    bottom: 3px;
-}
 
-.principal{
+/*  Fin Navbar  */
+
+
+/*  Principal   */
+#principal{
     background: #E5E5E5;
-    position: relative;
-    bottom: 320px;
-    height: 628px;
+    width: 100%;
 }
 
-.principal img{
-    position: relative;
-    top: 85px;
-}
-
-.principal p{
-    color: #ffffff;
-    font-size: 50px;
-    position: relative;
-    left: 750px;
-    bottom: 500px;
-    z-index: 3;
-    width: 600px;
-    margin-bottom: 450px;
-    text-align: center;
+.total{
+    width: 100%;
 }
 
 .pc{
     background: linear-gradient(to left, #2e5aeccb, #8691b711);
     width: 100%;
-    height: 608px;
-    position: relative;
-    bottom: 1558px;
-    z-index: 2;
+
 }
 
-.logo{
-    width: 500px;
-    position: relative;
-    top: 150px;
-    left: 770px;
-    z-index: 4;
-}
 
 .vm p{
     height: 30px;
@@ -95,9 +68,11 @@ body{
     border-radius: 50px;
     padding: 2px 18px;
     position: relative;
-    bottom: 15px;
+    bottom: 140px;
+    float: right;
+    right: 200px;
 }
-
+/*  Fin Principal   */
 .sn{
     background: #fff;
     padding: 0px 90px;
@@ -183,10 +158,6 @@ body{
     width: 700px;
     box-shadow: 48px 37px 28px rgba(0, 0, 0, 0.651);
     margin-bottom: 30px;
-}
-
-.floatleft{
-    float: right;
 }
 
 .imges{
@@ -509,6 +480,10 @@ input[type=file]{
     margin-bottom: -40%;
     margin-left: 75%;
     border-radius: 8px;
+}
+
+.clearfix{
+    clear: both;
 }
 
 @media screen and (max-width:800px){

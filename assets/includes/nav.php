@@ -17,32 +17,14 @@
 <body>
     <header>
         <div class="barra">
-            <ul>
-            <?= $direccion=""; $url="http://localhost/master-php/Proyecto/"?>
-            
-            <?php
-                if($url == "/index.php"){
-                    $direccion = "#";
-                }
-                else{
-                    $direccion = "../index.php";
-                }
-            ?>
-            
-                <li>
-                    <a href=<?=$direccion?>>Inicio</a>
-                </li>
+      
+            <a href="#">Inicio</a>
+     
+            <a href="catalogo.php">Catalogo</a>
 
-                <li>
-                    <a href="catalogo.php">Catalogo</a>
-                </li>
+            <a href="#sobreNosotros">Sobre nosotros</a>
+   
+            <a href="#contacto">Contacto</a>
 
-                <li>
-                    <a href="#sobreNosotros">Sobre nosotros</a>
-                </li>
-
-                <li>
-                    <a href="#contacto">Contacto</a>
-                </li>
-            </ul>
         </div>
+    </header>    

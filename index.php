@@ -1,14 +1,15 @@
 <?php require_once "./assets/includes/nav.php" ?>
 
-        <img class="logo" src="./assets/images/l.png" alt="logo" id="log">
+    <section id="principal">
 
-        <div class="principal">
-            <img src="./assets/images/p.png" alt="cosas de papelería">
-            <strong><p>Papelería Tlaxcalteca.</p></strong>
-            <p class="vm"><a href="#sobreNosotros">Ver mas</a></p>
-            <div class="pc"></div>
-        </div>
-    </header>
+    <img class="total"src="./assets/images/fondo.png" alt="cosas de papelería">
+    
+    </section>
+        
+    <p class="vm"><a href="#sobreNosotros">Ver mas</a></p>
+
+    <div class="clearfix"></div>
+
 
     <section id="sobreNosotros">
         <div class="sn">
