@@ -27,7 +27,7 @@ if(isset($_POST['registrar']))
         if($contraseña == $contra)
      {
 
-        $almacenar= "INSERT INTO usuarios( user_name, contraseña, Nombre, Ape_pat, Ape_mat, telefono, Rango) VALUES ('$usuario', '$contraseña', '$nombre', '$apep', '$apem', '$tel', '$rango')";
+        $almacenar= "INSERT INTO usuario( user_name, contraseña, Nombre, Ape_pat, Ape_mat, telefono, Rango) VALUES ('$usuario', '$contraseña', '$nombre', '$apep', '$apem', '$tel', '$rango')";
         $almacena= "INSERT INTO direccion(calle, No_interior, No_exterior, colonia, C_P) VALUES ('$calle', '$noi', '$noe', '$col', '$cp')";
         $resultado= mysqli_query($conexion, $almacenar);
         $res= mysqli_query($conexion, $almacena);
