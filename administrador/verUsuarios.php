@@ -1,7 +1,7 @@
 <?php require_once "../assets/includes/nav.php" ?>
 
-<div class="catalogo">
-            <p class="titulo">Catalogo de productos</p>
+<div>
+            <p class="titulo">USUARIOS</p>
             </br>
 </br>
 <div class="container center verpro">
@@ -13,16 +13,16 @@ require_once "../conexion.php";
         <thead>
           <tr>
               <th>ID</th>
-              <th>Código</th>
+              <th>USER_NAME</th>
               <th>Nombre</th>
-              <th>Categoría</th>
-              <th>Stock</th>
-              <th>Precio</th>
-              <th>Imagen</th>
+              <th>Apellido Paterno</th>
+              <th>Apellido Materno</th>
+              <th>Telefono</th>
+              <th>Rango</th>
           </tr>
         </thead>
     <?php
-        $consulta= "SELECT * FROM catalogo_p";
+        $consulta= "SELECT ID, user_name, Nombre, Ape_pat, Ape_mat, telefono, Rango FROM usuarios";
     $ejecutarconsulta= mysqli_query($conexion,$consulta);
     $verfilas= mysqli_num_rows($ejecutarconsulta);
     $fila= mysqli_fetch_array($ejecutarconsulta);
@@ -60,13 +60,15 @@ require_once "../conexion.php";
     ?>
         
       </table>
-      <form method="get" action="buscar.php">
- <button type="submit" id="bntVerPro">Continuar</button>
+      <br>
+      <br>
+      <form method="get" action="direccion.php">
+ <button margin-left="5%" type="submit">Dirección
 </form>
 <br>
 </div>
-    </div>
-<a href="adindex.php">
+</div>
+<a href="userRegis.php">
 <img src="../assets/images/l.png" style="height:100px; width:100px">
     </a>
 <?php require_once "../assets/includes/footer.php" ?>

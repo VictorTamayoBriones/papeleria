@@ -99,4 +99,7 @@
         </tbody>
     </table>
 </div>
+<a href="epindex.php">
+<img src="../assets/images/l.png" style="height:100px; width:100px">
+    </a>
 <?php require_once "../assets/includes/footer.php" ?>
