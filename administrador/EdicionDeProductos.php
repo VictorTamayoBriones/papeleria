@@ -29,6 +29,12 @@ if(isset($_POST['actualizar']))
             <a href="http://localhost/GitHub/papeleria/administrador/editarProduct.php"> <font color="negro"> <center> MODIFICACIÓN EXITOSA </center> </font> </a>
             <?php
         }
+        else
+        {
+            ?>
+            <a href="http://localhost/GitHub/papeleria/administrador/editarProduct.php"> <font color="negro"> <center> ERROR </center> </font> </a>
+            <?php
+        }
 
 
     }
