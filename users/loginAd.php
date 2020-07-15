@@ -1,5 +1,4 @@
 <?php require_once "../assets/includes/nav.php" ?>
-<?php require_once "../assets/includes/intentos.php" ?>
     <div class="login">
         <form action="login.php" id="loginA" method="POST">
 
@@ -15,7 +14,7 @@
             <?php if(isset($_GET['3rr0r'])):?>
                 <div class="alertaError" ><p>Datos no validos <br> Se bloqueo la cuenta temporalmente</p></div>
             <?php endif ?>
-            <?php mostrarIntentos(); ?>
+            
             <img src="../assets/images/descarga.png" alt="login">
                 
                 <input type="text" name="usuario" id="usuario" placeholder="    ingresa tu usuario" required minlength="8" maxlength="30" pattern="[A-Za-z0-9]+" <?php if(isset($_GET['3rr0r'])):?> disabled <?php endif ?>>

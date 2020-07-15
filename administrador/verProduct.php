@@ -61,7 +61,7 @@ require_once "../conexion.php";
         
       </table>
       <form method="get" action="buscar.php">
- <button margin-left="1%" type="submit">Continuar
+ <button type="submit" id="bntVerPro">Continuar</button>
 </form>
 <br>
 </div>

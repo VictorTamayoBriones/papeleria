@@ -18,6 +18,7 @@
     <header>
         <div class="barra">
       
+
             <a href="http://localhost/GitHub/papeleria/index.php">Inicio</a>
      
             <a href="http://localhost/GitHub/papeleria/catalogo.php">Catalogo</a>

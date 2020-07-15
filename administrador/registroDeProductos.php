@@ -17,14 +17,12 @@ if(isset($_POST['registrar'])){
         $categoria= $_POST['categoria'];
         $stock= $_POST['stock'];
         $precio= $_POST['precio'];
-        $imagen= $_POST['Imagen'];
-        $almacenar= "INSERT INTO catalogo_p(codigo, nombre_articulo, categoria, stock, precio, imagen) VALUES ('$codigo', '$nombre', '$categoria', '$stock', '$precio', '$imagen')";
+        //$imagen= $_POST['Imagen'];
+        $almacenar= "INSERT INTO catalogo_p(codigo, nombre_articulo, categoria, stock, precio) VALUES ('$codigo', '$nombre', '$categoria', '$stock', '$precio')";
         $resultado= mysqli_query($conexion, $almacenar);
         if($resultado)
         {
-            ?>
-            <a href="http://localhost/GitHub/papeleria/administrador/regisProduct.php"> <font color="negro"> <center> REGISTRO EXITOSO </center> </font> </a>
-            <?php
+            header ("location: regisProduct.php?exito");
         }
 
     }
