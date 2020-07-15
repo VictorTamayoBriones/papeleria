@@ -18,8 +18,8 @@
     <header>
         <div class="barra">
       
-            <a href="#">Inicio</a>
-     
+            <a href="../index.php">Inicio</a>
+            
             <a href="catalogo.php">Catalogo</a>
 
             <a href="#sobreNosotros">Sobre nosotros</a>
