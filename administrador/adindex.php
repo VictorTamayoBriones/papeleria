@@ -16,7 +16,7 @@
 
             <a href="verProduct.php" id="azul">Ver productos</a>
             
-            <a href="editarProduct.php" id="amarillo">Editar Prodcutos</a>
+            <a href="editarProduct.php" id="amarillo">Editar Productos</a>
 
             <a href="userRegis.php" id="azul">Registrar Usuarios </a>
             
