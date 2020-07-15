@@ -15,4 +15,7 @@ include("select.php");
 include("eliminar.php")
 ?>
 </div>
+<a href="verProduct.php">
+<img src="../assets/images/l.png" style="height:100px; width:100px">
+    </a>
 <?php require_once "../assets/includes/footer.php" ?>

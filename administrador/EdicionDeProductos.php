@@ -25,7 +25,9 @@ if(isset($_POST['actualizar']))
         $resultado= mysqli_query($conexion, $modi);
         if($resultado)
         {
-            echo("Modificacion exitosa");
+            ?>
+            <a href="http://localhost/GitHub/papeleria/administrador/editarProduct.php"> <font color="negro"> <center> MODIFICACIÓN EXITOSA </center> </font> </a>
+            <?php
         }
 
 

@@ -7,7 +7,7 @@
             <p id="bnu">Bienvenido usuario</p> 
             <p id="dateu">Martes 27 de abril</p>
 
-            <input type="submit" value="Cambiar usuario">
+            <a href="http://localhost/GitHub/papeleria/users/loginAd.php" > <font color="Negro"> <h4> Cerrar Sesión </h4> </font> </a>
         </div>
 
         <div class="op">
