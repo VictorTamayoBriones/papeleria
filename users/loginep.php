@@ -15,7 +15,6 @@ require_once "../conexion.php";
     $verfilas= mysqli_num_rows($resultado);
     if($verfilas >=1)
     {
-        
         if($reg == "administrador")
         {
 
@@ -38,12 +37,6 @@ require_once "../conexion.php";
         }
     }
     else{
-        ?>
-            <a href="http://localhost/GitHub/papeleria/users/loginAd.php">
-            <?php
-            echo("<h1> <center> Error. Complete los formularios </center> </h1>");
-            ?>
-            </a>
-            <?php
+        echo("USUARIO y/o CONTRASEÑA son incorrectos");
     }
 }

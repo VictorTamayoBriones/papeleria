@@ -17,9 +17,11 @@
             
             <img src="../assets/images/descarga.png" alt="login">
                 
-                <input type="text" name="usuario" id="usuario" placeholder="    ingresa tu usuario" required minlength="8" maxlength="30" pattern="[A-Za-z0-9]+" <?php if(isset($_GET['3rr0r'])):?> disabled <?php endif ?>>
+                <input type="text" name="usuario" id="usuario" placeholder="    ingresa tu usuario" required minlength="3" maxlength="30" pattern="[A-Za-z0-9]+" <?php if(isset($_GET['3rr0r'])):?> disabled <?php endif ?>>
 
-                <input type="password" name="pass" id="pass" placeholder="  ingresa tu contraseña" required minlength="8" maxlength="30" pattern="[0-9]+" <?php if(isset($_GET['3rr0r'])):?> disabled <?php endif ?>>
+                <input type="text" name="rango" id="usuario" placeholder="   Rango" required minlength="5" maxlength="30" pattern="[A-Za-z0-9]+" <?php if(isset($_GET['3rr0r'])):?> disabled <?php endif ?>>
+
+                <input type="password" name="pass" id="pass" placeholder="  ingresa tu contraseña" required minlength="6" maxlength="30" pattern="[0-9]+" <?php if(isset($_GET['3rr0r'])):?> disabled <?php endif ?>>
                 
                 <input type="submit" name="ingreso" id="ingreso" <?php if(isset($_GET['error'])):?> value="Ingresar" <?php elseif(isset($_GET['falloDos'])):?> value="Ingresa"<?php endif ?> value="Entrar" <?php if(isset($_GET['3rr0r'])):?> disabled <?php endif ?>>
                     

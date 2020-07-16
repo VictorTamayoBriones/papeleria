@@ -13,13 +13,13 @@
                     </div>
                     <div class="card-panel hoverable  col s4">
                         <div className="input-field ">
-                            <input className="container validate" type="password" placeholder="contraseña" name="contra" required minlength="8" maxlength="60" pattern="[a-zA-Z0-9]+"/>
+                            <input className="container validate" type="password" placeholder="contraseña" name="contra" required minlength="6" maxlength="60" pattern="[a-zA-Z0-9]+"/>
                         </div>
                     </div>
                     <br>
                     <div class="card-panel hoverable  col s4">
                         <div className="input-field ">
-                            <input className="container validate" type="password" placeholder="Ingresa de nuevo la contraseña" name="contraseña" required minlength="8" maxlength="60" pattern="[a-zA-Z0-9]+"/>
+                            <input className="container validate" type="password" placeholder="Ingresa de nuevo la contraseña" name="contraseña" required minlength="6" maxlength="60" pattern="[a-zA-Z0-9]+"/>
                         </div>
                     </div>
 
