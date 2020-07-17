@@ -1,4 +1,4 @@
-<?php require_once "../assets/includes/nav.php" ?>
+<?php require_once "../assets/includes/navlogin.php" ?>
 
 <div>
             <p class="titulo">USUARIOS</p>
@@ -68,7 +68,7 @@ require_once "../conexion.php";
 <br>
 </div>
 </div>
-<a href="userRegis.php">
+<a href="adindex.php">
 <img src="../assets/images/l.png" style="height:100px; width:100px">
     </a>
-<?php require_once "../assets/includes/footer.php" ?>
+<?php require_once "../assets/includes/footerlogin.php" ?>

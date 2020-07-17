@@ -1,4 +1,4 @@
-<?php require_once "../assets/includes/nav.php" ?>
+<?php require_once "../assets/includes/navlogin.php" ?>
     <div class="resgisVen">
         <form action="regisVen.php" id="regisVentas">
             <p class="titulo">Registrar ventas</p>
@@ -25,4 +25,4 @@
     <a href="epindex.php">
 <img src="../assets/images/l.png" style="height:100px; width:100px">
     </a>
-<?php require_once "../assets/includes/footer.php" ?>
+<?php require_once "../assets/includes/footerlogin.php" ?>

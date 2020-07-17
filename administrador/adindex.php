@@ -1,4 +1,4 @@
-<?php require_once "../assets/includes/nav.php" ?>
+<?php require_once "../assets/includes/navlogin.php" ?>
     <section id="empleados">
         
         <div class="perfil">    
@@ -28,4 +28,4 @@
 
 
 
-<?php require_once "../assets/includes/footer.php" ?>
+<?php require_once "../assets/includes/footerlogin.php" ?>

@@ -1,4 +1,4 @@
-<?php require_once "../assets/includes/nav.php" ?>
+<?php require_once "../assets/includes/navlogin.php" ?>
 
 <div class="catalogo">
             <p class="titulo">Catalogo de productos</p>
@@ -64,9 +64,10 @@ require_once "../conexion.php";
  <button type="submit" id="bntVerPro">Continuar</button>
 </form>
 <br>
-</div>
-    </div>
+
 <a href="adindex.php">
 <img src="../assets/images/l.png" style="height:100px; width:100px">
     </a>
-<?php require_once "../assets/includes/footer.php" ?>
+<?php require_once "../assets/includes/footerlogin.php" ?>
+</div>
+    </div>

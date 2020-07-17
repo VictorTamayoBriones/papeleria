@@ -1,4 +1,4 @@
-<?php require_once "../assets/includes/nav.php" ?>
+
 
 </br>
 <div class="container center verpro">
@@ -64,4 +64,3 @@ require_once "../conexion.php";
       </table>
       
 </div>
-<?php require_once "../assets/includes/footer.php" ?>

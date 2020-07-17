@@ -1,4 +1,4 @@
-<?php require_once "../assets/includes/nav.php" ?>
+<?php require_once "../assets/includes/navlogin.php" ?>
     <div class="login">
         <form action="login.php" id="loginA" method="POST">
 
@@ -35,4 +35,4 @@
     <a href="../index.php">
 <img src="../assets/images/l.png" style="height:100px; width:100px">
     </a>
-<?php require_once "../assets/includes/footer.php" ?>
+<?php require_once "../assets/includes/footerlogin.php" ?>

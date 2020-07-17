@@ -1,4 +1,4 @@
-<?php require_once "../assets/includes/nav.php" ?>
+<?php require_once "../assets/includes/navlogin.php" ?>
 </br>
 <div class="container center" border-radius="55px" >
     <form action="EdicionDeProductos.php" method="POST" class="container">
@@ -68,4 +68,4 @@
 <a href="adindex.php">
 <img src="../assets/images/l.png" style="height:100px; width:100px">
     </a>
-<?php require_once "../assets/includes/footer.php" ?>
+<?php require_once "../assets/includes/footerlogin.php" ?>
