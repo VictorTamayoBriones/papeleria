@@ -1,4 +1,4 @@
-<?php require_once "../assets/includes/nav.php" ?>
+<?php require_once "../assets/includes/navlogin.php" ?>
 </br>
 <div class="container center" border-radius="55px" >
     <form action="registroDeUsuarios.php"  method="POST" class="container">
@@ -13,13 +13,13 @@
                     </div>
                     <div class="card-panel hoverable  col s4">
                         <div className="input-field ">
-                            <input className="container validate" type="password" placeholder="contraseña" name="contra" required minlength="8" maxlength="60" pattern="[a-zA-Z0-9]+"/>
+                            <input className="container validate" type="password" placeholder="contraseña" name="contra" required minlength="6" maxlength="60" pattern="[a-zA-Z0-9]+"/>
                         </div>
                     </div>
                     <br>
                     <div class="card-panel hoverable  col s4">
                         <div className="input-field ">
-                            <input className="container validate" type="password" placeholder="Ingresa de nuevo la contraseña" name="contraseña" required minlength="8" maxlength="60" pattern="[a-zA-Z0-9]+"/>
+                            <input className="container validate" type="password" placeholder="Ingresa de nuevo la contraseña" name="contraseña" required minlength="6" maxlength="60" pattern="[a-zA-Z0-9]+"/>
                         </div>
                     </div>
 
@@ -102,4 +102,4 @@
 <a href="adindex.php">
 <img src="../assets/images/l.png" style="height:100px; width:100px">
     </a>
-<?php require_once "../assets/includes/footer.php" ?>
+<?php require_once "../assets/includes/footerlogin.php" ?>

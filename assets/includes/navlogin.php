@@ -17,14 +17,7 @@
 <body>
     <header>
         <div class="barra">
-
-            <a href="http://localhost/GitHub/papeleria/index.php">Inicio</a>
-            
-            <a href="http://localhost/GitHub/papeleria/catalogo.php">Catalogo</a>
-
-            <a href="http://localhost/GitHub/papeleria/index.php#sobreNosotros">Sobre nosotros</a>
-   
-            <a href="http://localhost/GitHub/papeleria/index.php#contacto">Contacto</a>
+                <center><font color="white"> PAPELERIA TLAXCALTECA</font></center>
 
         </div>
     </header>    

@@ -11,8 +11,8 @@ if(isset($_POST['registrar']))
 {
         
         $usuario= $_POST['user'];
-        $contraseña= $_POST['contraseña'];
-        $contra= $_POST['contra'];
+        $contraseña=  sha1($_POST['contraseña']);
+        $contra= sha1($_POST['contra']);
         $nombre= $_POST['nombre'];
         $apep= $_POST['Ape_pat'];
         $apem= $_POST['Ape_mat'];
@@ -34,17 +34,31 @@ if(isset($_POST['registrar']))
         if($resultado && $res)
         {
             ?>
-           <center> <a href="userRegis.php"> <bg color="black"> REGISTRO EXITOSO </bg> <a> </center>
-           <?php
-
+            <a href="http://localhost/GitHub/papeleria/administrador/userRegis.php">
+            <?php
+            echo("<h1> <center> Exito. Datos  almacenados </center> </h1>");
+            ?>
+            </a>
+            <?php
         }
-        else{
+        else{ ?>
+            <a href="http://localhost/GitHub/papeleria/administrador/userRegis.php">
+            <?php
             echo("<h1> <center> Error. Datos no almacenados </center> </h1>");
+            ?>
+            </a>
+            <?php
              }
     }
     else{
+        ?>
+            <a href="http://localhost/GitHub/papeleria/administrador/userRegis.php">
+            <?php
     echo("<h2> <center> Error, las cotraseñas deben ser iguales, intentelo de nuevo </center> </h2>");
-         }
+    ?>
+            </a>
+            <?php     
+    }
 }
 
 }

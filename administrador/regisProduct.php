@@ -1,4 +1,4 @@
-<?php require_once "../assets/includes/nav.php" ?>
+<?php require_once "../assets/includes/navlogin.php" ?>
 
 <?php if(isset($_GET['exito'])):?>
   <br>  <div class="alertaExito"><p>Registro Exitoso</p></div>
@@ -69,4 +69,4 @@
 <a href="adindex.php">
 <img src="../assets/images/l.png" style="height:100px; width:100px">
     </a>
-<?php require_once "../assets/includes/footer.php" ?>
+<?php require_once "../assets/includes/footerlogin.php" ?>

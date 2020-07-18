@@ -25,9 +25,19 @@ if(isset($_POST['registrar'])){
             header ("location: regisProduct.php?exito");
         }
         else{
-            header ("location: regisProduct.php?Error");
+            ?>
+            
+            <?php
         }
 
     }
+    ?>
+    <h1><center>Error datos no almacenados <br> intentelo de nuevo</center></h1>
+    <center>
+    <a href="regisProduct.php">
+<img src="../assets/images/l.png" style="height:100px; width:100px">
+    </a>
+    </center>
+            <?php
 }
 ?>

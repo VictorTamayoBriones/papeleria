@@ -1,4 +1,4 @@
-<?php require_once "../assets/includes/nav.php" ?>
+<?php require_once "../assets/includes/navlogin.php" ?>
 
 </br>
 <p class="titulo">Direccion-Usuario</p>
@@ -73,4 +73,4 @@ require_once "../conexion.php";
 <a href="verUsuarios.php">
 <img src="../assets/images/l.png" style="height:100px; width:100px">
     </a>
-<?php require_once "../assets/includes/footer.php" ?>
+<?php require_once "../assets/includes/footerlogin.php" ?>

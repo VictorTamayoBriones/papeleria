@@ -1,6 +1,4 @@
-<?php require_once "../assets/includes/nav.php" ?>
 
-</br>
 <div class="container center verpro">
 <?php
 require_once "../conexion.php";
@@ -23,4 +21,3 @@ if(isset($_POST['eliminar']))
 
 ?>
 </div>
-<?php require_once "../assets/includes/footer.php" ?>
