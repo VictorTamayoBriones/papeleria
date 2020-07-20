@@ -51,9 +51,7 @@
                 
                     <div class="card-panel hoverable col s5" id="imgProd">
                         <div className="input-field ">
-                            <label for="Imagen" id="la">Imagen</label>
-
-                            <input className="container validate" type="file" placeholder="Imagen" name="imagen"/>
+                        <input className="container validate" type="text" placeholder="imagen" name="imagen" required minlength="3" maxlength="60"/>
 
                         </div>
                     </div>
