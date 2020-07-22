@@ -18,13 +18,13 @@
     <header>
         <div class="barra">
 
-            <a href="http://localhost/GitHub/papeleria/index.php">Inicio</a>
+            <a href="./index.php">Inicio</a>
             
-            <a href="http://localhost/GitHub/papeleria/catalogo.php">Catalogo</a>
+            <a href="./catalogo.php">Catalogo</a>
 
-            <a href="http://localhost/GitHub/papeleria/index.php#sobreNosotros">Sobre nosotros</a>
+            <a href="./index.php#sobreNosotros">Sobre nosotros</a>
    
-            <a href="http://localhost/GitHub/papeleria/index.php#contacto">Contacto</a>
+            <a href="./index.php#contacto">Contacto</a>
 
         </div>
     </header>    

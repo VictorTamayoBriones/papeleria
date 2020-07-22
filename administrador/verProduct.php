@@ -1,6 +1,11 @@
 <?php require_once "../assets/includes/navlogin.php" ?>
 
 <div class="catalogo">
+
+<a href="adindex.php">
+<button class="btn-large center deep-blue hoverable" id="return">Regresar</button>
+</a>
+
             <p class="titulo">Catalogo de productos</p>
             </br>
 </br>
@@ -67,9 +72,8 @@ require_once "../conexion.php";
 </form>
 <br>
 
-<a href="adindex.php">
-<img src="../assets/images/l.png" style="height:100px; width:100px">
-    </a>
-<?php require_once "../assets/includes/footerlogin.php" ?>
+
+
 </div>
     </div>
+    <?php require_once "../assets/includes/footer.php" ?>    

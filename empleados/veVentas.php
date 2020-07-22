@@ -1,4 +1,7 @@
 <?php require_once "../assets/includes/navlogin.php" ?>
+<a href="epindex.php">
+<button class="btn-large center deep-blue hoverable" id="return">Regresar</button>
+</a>
 <div class="tabla">
     <table class="striped">
         <thead>
@@ -99,7 +102,5 @@
         </tbody>
     </table>
 </div>
-<a href="epindex.php">
-<img src="../assets/images/l.png" style="height:100px; width:100px">
-    </a>
+
 <?php require_once "../assets/includes/footerlogin.php" ?>

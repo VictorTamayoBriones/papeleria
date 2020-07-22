@@ -7,7 +7,7 @@
             <p id="bnu">Bienvenido usuario</p> 
             <p id="dateu">Martes 27 de abril</p>
 
-            <a href="http://localhost/GitHub/papeleria/users/loginAd.php" > <font color="Negro"> <h4> Cerrar Sesión </h4> </font> </a>
+            <a href="../index.php" ><h5 class="logout"> Cerrar Sesión </h5></a>
         </div>
 
         <div class="op">

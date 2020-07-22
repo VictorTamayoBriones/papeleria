@@ -1,4 +1,7 @@
 <?php require_once "../assets/includes/navlogin.php" ?>
+<a href="adindex.php">
+<button class="btn-large center deep-blue hoverable" id="return">Regresar</button>
+</a>
 </br>
 <div class="container center" border-radius="55px" >
     <form action="EdicionDeProductos.php" method="POST" class="container">
@@ -47,7 +50,7 @@
                         </div>
                     </div>
                 
-                    <div class="conatiner col s2"></div>
+                    <div class="conatiner col s3"></div>
                 
                     <div class="card-panel hoverable col s5">
                         <div className="input-field ">
@@ -65,7 +68,4 @@
         
     </form>
 </div>
-<a href="adindex.php">
-<img src="../assets/images/l.png" style="height:100px; width:100px">
-    </a>
 <?php require_once "../assets/includes/footerlogin.php" ?>
