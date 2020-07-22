@@ -1,28 +1,58 @@
 <?php require_once "../assets/includes/navlogin.php" ?>
-    <div class="resgisVen">
-        <form action="regisVen.php" id="regisVentas">
-            <p class="titulo">Registrar ventas</p>
+<a href="epindex.php">
+<button class="btn-large center deep-blue hoverable" id="return">Regresar</button>
+</a>
+</br>
+               
+<div class="container center" border-radius="55px" >
+    <form action="registroDeProductos.php"  method="POST" class="container">
+            <div class="card-panel hoverable grey lighten-5">
+                <div class="row">
+                    <h3>Registrar ventas</h3>   
+                    <div class="card-panel hoverable  col s12">
+                        <div className="input-field ">
+                            <input className="container validate" type="text" placeholder="Coidgo de producto" name="codigo" required minlength="3" maxlength="60" pattern="[a-zA-Z0-9]+"/>
+                        </div>
+                    </div>
 
-            <input class="inpre" type="text" id="codigo"    placeholder="   codigo del producto" required minlength="3" maxlength="60" pattern="[0-9]+">
 
-            <input class="inpre" type="text" id="nombrePro" placeholder="   Nombre del producto" required minlength="3" maxlength="60" pattern="[a-zA-Z0-9]+">
+                    <div class="card-panel hoverable  col s12">
+                        <div className="input-field ">
+                            <input className="container validate" type="text" placeholder="Nombre de producto" name="nombrePro" required minlength="3" maxlength="60" pattern="[0-9]+"/>
+                        </div>
+                    </div>
 
-            <input class="inpre" type="text" id="costo"     placeholder="   precio" minlength="3" required maxlength="60" pattern="[0-9]+">
+                    <div class="card-panel hoverable  col s5">
+                        <div className="input-field ">
+                            <input className="container validate" type="text" placeholder="Precio" name="precio"/>
+                        </div>
+                    </div>
 
-            <input class="inpre" type="text" id="cantidad"   placeholder="  Cantidad" minlength="3" required maxlength="60" pattern="[0-9]+">
+                    <div class="conatiner col s2"></div>
 
-            <br>
-            <br>
-            <label class="f" for="folio">Folio</label>
-            <input  class="inpre" type="text" id="folio" value="    0001" required minlength="3" maxlength="60" pattern="[0-9]+">
+                    <div class="card-panel hoverable col s5">
+                        <div className="input-field ">
+                            <input className="container validate espacio" type="text" placeholder="Cantidad" name="cantidad" required minlength="3" maxlength="60"/>
+                        </div>
+                    </div>
+                
+                    <div class="conatiner col s4"></div>
+                
+                    <div class="card-panel hoverable  col s4">
+                        <div className="input-field ">
+                            <input className="container validate" type="number" placeholder="folio" name="folio" required minlength="3" maxlength="60" pattern="[0-9]+"/>
+                        </div>
+                    </div>
+                
 
-            <br>
-            <input class="insub1" type="button" value="Agregar producto">
+                </div>
+                <input type="submit" class="btn-large center deep-blue hoverable" id="actualizar" name="agregar" value="Agregar Producto">
 
-            <input class="insub2" type="button" value="Registrar venta">
-        </form>
-    </div>
-    <a href="epindex.php">
-<img src="../assets/images/l.png" style="height:100px; width:100px">
-    </a>
+    
+
+                <input type="submit" class="btn-large center deep-blue hoverable" id="actualizar" name="registrar" value="Registrar venta">
+            </div>
+        
+    </form>
+</div>
 <?php require_once "../assets/includes/footerlogin.php" ?>

@@ -3,7 +3,9 @@
 <?php if(isset($_GET['exito'])):?>
   <br>  <div class="alertaExito"><p>Registro Exitoso</p></div>
 <?php endif; ?> 
-
+<a href="adindex.php">
+<button class="btn-large center deep-blue hoverable" id="return">Regresar</button>
+</a>
 </br>
                
 <div class="container center" border-radius="55px" >
@@ -60,13 +62,10 @@
 
                 </div>
             
-                <input type="submit" class="btn-large center deep-blue hoverable" name="registrar" value="Registrar Producto">
+                <input type="submit" class="btn-large center deep-blue hoverable" id="actualizar" name="registrar" value="Registrar Producto">
             </div>
         
     </form>
 </div>
 
-<a href="adindex.php">
-<img src="../assets/images/l.png" style="height:100px; width:100px">
-    </a>
 <?php require_once "../assets/includes/footerlogin.php" ?>

@@ -7,21 +7,21 @@
             <p id="bnu">Bienvenido usuario</p> 
             <p id="dateu">Martes 27 de abril</p>
 
-            <a href="../index.php" > <font color="Negro"> <h4> Cerrar Sesión </h4> </font> </a>
+            <a href="../index.php" ><h5 class="logout"> Cerrar Sesión </h5></a>
         </div>
 
         <div class="op">
             <details>
-                <summary close>
+                <summary id="dePro">
                     Productos
                 </summary>
                 <ul>
                     <li>
-                        <a href="regisProduct.php" id="verde">Registrar Productos</a>
+                        <a href="regisProduct.php" id="azul">Registrar Productos</a>
                     </li>
 
                     <li>
-                        <a href="verProduct.php" id="azul">Ver productos</a>
+                        <a href="verProduct.php" id="verde">Ver productos</a>
                     </li>
                     
                     <li>
@@ -33,7 +33,7 @@
             </details>
 
             <details>
-                <summary>
+                <summary id="deUser">
                     Usuarios
                 </summary>
                 <ul>
@@ -42,7 +42,7 @@
                     </li>
 
                     <li>
-                        <a href="verUsuarios.php" id="rojo">Usuarios</a>
+                        <a href="verUsuarios.php" id="amarillo">Ver usuarios</a>
                     </li>
                     
                 </ul>
