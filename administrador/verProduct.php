@@ -26,6 +26,7 @@ require_once "../conexion.php";
               <th>Imagen</th>
           </tr>
         </thead>
+        
     <?php
         $consulta= "SELECT * FROM catalogo_p";
     $ejecutarconsulta= mysqli_query($conexion,$consulta);
@@ -57,6 +58,7 @@ require_once "../conexion.php";
                             <td>'.$fila[6].'</td>
                             
                         </tr>';
+                        
                         $fila=mysqli_fetch_array($ejecutarconsulta);
                 }
             }

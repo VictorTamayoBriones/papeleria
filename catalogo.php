@@ -69,6 +69,6 @@ require_once "./conexion.php";
       </table>
 </center>
 <br>
-</div>
-</div>
 <?php require_once "./assets/includes/footer.php" ?>
+</div>
+</div>
