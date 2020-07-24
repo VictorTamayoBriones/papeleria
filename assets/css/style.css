@@ -221,6 +221,24 @@ footer{
     margin: 1% 0;
 }
 
+#delete{
+    background: rgb(248, 33, 33);
+    border: none;
+    outline-style: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#delete:hover{
+    background: rgb(212, 17, 17);
+}
+
+#folioVenta{
+    text-align: center;
+}
+
 .logout{
     color: #2E59EC;
     border: 1px solid #2E59EC;

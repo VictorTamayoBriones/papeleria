@@ -1,5 +1,9 @@
 <?php require_once "../assets/includes/navlogin.php" ?>
 
+<a href="adindex.php">
+<button class="btn-large center deep-blue hoverable" id="return">Regresar</button>
+</a>
+
 <div>
             <p class="titulo">USUARIOS</p>
             </br>
@@ -68,7 +72,4 @@ require_once "../conexion.php";
 <br>
 </div>
 </div>
-<a href="adindex.php">
-<img src="../assets/images/l.png" style="height:100px; width:100px">
-    </a>
 <?php require_once "../assets/includes/footerlogin.php" ?>
