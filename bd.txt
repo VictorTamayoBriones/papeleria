@@ -1,0 +1,24 @@
+hola, con los cambios que subi para las ventas fue necesario crear otro campo en la tabla de ventas
+entonces yo recomendaria que borarr la tabla que ustedes tienen actualmente 
+y solo copiaran en la consola la instruccion que les dejo abajo.
+
+
+
+CREATE TABLE `ventas` (
+  `IDventa` int(11) NOT NULL AUTO_INCREMENT,
+  `Codigo` int(25) NOT NULL,
+  `Cantidad` int(25) NOT NULL,
+  `nombre` varchar(50) NOT NULL,
+  `Total` double NOT NULL,
+  `fecha` date NOT NULL,
+  `Nombre_usuario` varchar(50) NOT NULL,
+  PRIMARY KEY (`IDventa`),
+  KEY `fk_uservent` (`Nombre_usuario`),
+  KEY `Codigo` (`Codigo`),
+  CONSTRAINT `fk_codi` FOREIGN KEY (`Codigo`) REFERENCES `catalogo_p` (`codigo`),
+  CONSTRAINT `fk_uservent` FOREIGN KEY (`Nombre_usuario`) REFERENCES `usuario` (`user_name`)
+);
+
+
+
+y debido a mis problemas de comunicacion agradeceria que observaciones o cosas asi las dejaran en este archivo.
