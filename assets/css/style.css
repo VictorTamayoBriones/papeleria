@@ -221,6 +221,15 @@ footer{
     margin: 1% 0;
 }
 
+.agregarPro{
+    border-radius: 25px 0px 0px 25px !important;
+    margin: 1% 0 !important;
+    display: inline-block !important;
+    position: fixed !important;
+    margin-left: 86% !important;
+    margin-top: 35% !important;
+}
+
 #delete{
     background: rgb(248, 33, 33);
     border: none;

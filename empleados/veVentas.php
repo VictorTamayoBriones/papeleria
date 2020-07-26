@@ -11,8 +11,8 @@
             <tr>
                 <th>Folio</th>
                 <th>C.producto</th>
-                <th>Cantidad</th>
                 <th>N.producto</th>
+                <th>Cantidad</th>
                 <th>Total</th>
                 <th>Fecha</th>
                 <th>Realizo</th>
@@ -47,8 +47,8 @@
                                        <tr>
                                            <td>$fila[0]</td>
                                            <td>$fila[1]</td>
-                                           <td>$fila[2]</td>
                                            <td>$fila[3]</td>
+                                           <td>$fila[2]</td>
                                            <td>$fila[4]</td>
                                            <td>$fila[5]</td>
                                            <td>$fila[6]</td>
