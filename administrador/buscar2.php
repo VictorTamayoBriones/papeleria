@@ -1,9 +1,9 @@
-<?php require_once "./assets/includes/nav.php" ?>
+<?php require_once "../assets/includes/nav.php" ?>
 
 </br>
 <div class="container center verpro">
 <?php
-require_once "./conexion.php";
+require_once "../conexion.php";
 ?>
 <div class="catalogo">
 <p class="titulo"> <a href="catalogo.php"> <font color="black"> Catalogo de productos</font></a></p>
@@ -28,5 +28,7 @@ require_once "./conexion.php";
         
       </table>
 </center>
+</div><?php require_once "../assets/includes/footer.php" ?>
 </div>
-</div>
+
+

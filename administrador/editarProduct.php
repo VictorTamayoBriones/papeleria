@@ -52,11 +52,9 @@
                 
                     <div class="conatiner col s3"></div>
                 
-                    <div class="card-panel hoverable col s5">
+                    <div class="card-panel hoverable col s5" id="imgProd">
                         <div className="input-field ">
-                            <label for="Imagen" id="la">Imagen</label>
-
-                            <input className="container validate" type="file" placeholder="Imagen" name="imagen"/>
+                        <input  type="text" placeholder="imagen" name="imagen"/>
 
                         </div>
                     </div>

@@ -75,5 +75,5 @@ require_once "../conexion.php";
 
 
 </div>
-    </div>
-    <?php require_once "../assets/includes/footer.php" ?>    
+</div>
+       
