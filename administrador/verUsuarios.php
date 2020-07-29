@@ -1,10 +1,15 @@
 <?php require_once "../assets/includes/navlogin.php" ?>
-
+<div class="catalogo">
+<br>
 <a href="adindex.php">
 <button class="btn-large center deep-blue hoverable" id="return">Regresar</button>
 </a>
+<br>
+<a href="direccion.php">
+<button class="btn-large center deep-blue hoverable" id="return">DIRECCIÓN</button>
+</a>
 
-<div>
+
             <p class="titulo">USUARIOS</p>
             </br>
 </br>
@@ -66,9 +71,7 @@ require_once "../conexion.php";
       </table>
       <br>
       <br>
-      <form method="get" action="direccion.php">
- <button margin-left="5%" type="submit">Dirección
-</form>
+      
 <br>
 </div>
 </div>

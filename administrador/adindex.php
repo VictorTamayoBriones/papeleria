@@ -70,4 +70,3 @@
 
 <!--<script src="despliegue.js"></script>-->
 
-<?php require_once "../assets/includes/footerlogin.php" ?>

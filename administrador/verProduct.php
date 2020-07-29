@@ -1,13 +1,17 @@
 <?php require_once "../assets/includes/navlogin.php" ?>
 
 <div class="catalogo">
-
+<p class="titulo">Catalogo de productos</p>
+            </br>
 <a href="adindex.php">
 <button class="btn-large center deep-blue hoverable" id="return">Regresar</button>
 </a>
 
-            <p class="titulo">Catalogo de productos</p>
-            </br>
+            
+            
+      <form method="get" action="buscar.php">
+ <button class="btn-large center deep-blue hoverable"type="submit" id="return">Continuar</button>
+</form>
 </br>
 <div class="container center verpro">
 <?php
@@ -66,13 +70,10 @@ require_once "../conexion.php";
 
     ?>
         
-      </table>
-      <form method="get" action="buscar.php">
- <button type="submit" id="bntVerPro">Continuar</button>
-</form>
+      
 <br>
 
-
+</table>
 
 </div>
 </div>

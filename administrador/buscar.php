@@ -1,7 +1,12 @@
 <?php require_once "../assets/includes/navlogin.php" ?>
 
 </br>
-<div class="container center verpro">
+<div class="catalogo">
+<a href="verProduct.php">
+<form method="get" action="verProduct.php">
+ <button class="btn-large center deep-blue hoverable" type="submit" id="return">Regresar</button>
+</form>
+</a>
 <?php
 
 ?>
@@ -15,8 +20,6 @@ include("select.php");
 include("eliminar.php");
 ?>
 
-<a href="verProduct.php">
-<img src="../assets/images/l.png" style="height:100px; width:100px">
-    </a>
-<?php require_once "../assets/includes/footerlogin.php" ?>
+
+
 </div>

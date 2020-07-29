@@ -2,7 +2,7 @@
 <?php
 require_once "../conexion.php";
 ?>
-<div class="catalogo">
+
             <p class="titulo">Catalogo de productos</p>
             </br>
             
@@ -15,7 +15,7 @@ require_once "../conexion.php";
 
 <br>
 </br>
-<center>
+
 <table class="striped center">
         <thead>
           <tr>
@@ -67,8 +67,8 @@ require_once "../conexion.php";
     ?>
       
       </table>
-</center>
+
 <br>
 <?php require_once "../assets/includes/footer.php" ?>
 </div>
-</div>
+

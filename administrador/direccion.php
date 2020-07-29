@@ -3,14 +3,17 @@
 </br>
 <p class="titulo">Direccion-Usuario</p>
             </br>
-<div class="container center verpro">
+<div class="catalogo">
 <?php
 require_once "../conexion.php";
 ?>
-
+<br>
+<a href="adindex.php">
+<button class="btn-large center deep-blue hoverable" id="return">regresar</button>
+</a>
 <form method="post">
 <input type="number" name="id" maxlength="50" size="80" placeholder="INGRESA EL ID del usuario" required minlength="1" maxlength="60"> 
- <button input type="submit" name="direc"> BUSCAR </button>
+ <button input type="submit" id="buscardos" name="direc"> BUSCAR </button>
 </form>
 <table class="striped center">
         <thead>
@@ -70,7 +73,5 @@ require_once "../conexion.php";
       </table>
       
 </div>
-<a href="verUsuarios.php">
-<img src="../assets/images/l.png" style="height:100px; width:100px">
-    </a>
+
 <?php require_once "../assets/includes/footerlogin.php" ?>
