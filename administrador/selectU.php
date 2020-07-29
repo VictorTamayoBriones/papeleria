@@ -1,40 +1,29 @@
-<?php require_once "../assets/includes/navlogin.php" ?>
 
 </br>
-<p class="titulo">Direccion-Usuario</p>
-            </br>
-<div class="catalogo">
+<div class="container center verpro">
 <?php
 require_once "../conexion.php";
 ?>
-<br>
-<a href="verUsuarios.php">
-<button class="btn-large center deep-blue hoverable" id="return">regresar</button>
-</a>
-<form method="post">
-<input type="number" name="id" maxlength="50" size="80" placeholder="INGRESA EL ID del usuario" required minlength="1" maxlength="60"> 
- <button input type="submit" id="buscardos" name="direc"> BUSCAR </button>
-</form>
 <table class="striped center">
         <thead>
           <tr>
               <th>ID</th>
-              <th>USER_NAME</th>
-              <th>Calle</th>
-              <th>Numero Interior</th>
-              <th>Número Exterior</th>
-              <th>Colonia</th>
-              <th>Codigo Postal</th>
-              
+              <th>User_Name</th>
+              <th>Nombre</th>
+              <th>Apellido Paterno</th>
+              <th>Apellido Materno</th>
+              <th>Telefono</th>
+              <th>Rango</th>
+              <th>Matricula</th>
           </tr>
         </thead>
     <?php
-    if(isset($_POST['direc']))
+    if(isset($_POST['buscar']))
     {
-        if(strlen($_POST['id']) >=1)
+        if(strlen($_POST['usuario']) >=1)
         {
-            $codigo=$_POST['id'];
-        $consulta= "SELECT direccion.IDempleado, usuario.user_name, direccion.calle, No_interior, direccion.No_exterior, direccion,colonia, direccion.C_P FROM direccion inner join usuario on usuario.matriculo=direccion.IDempleado where IDempleado=$codigo";
+            $user=$_POST['usuario'];
+        $consulta= "SELECT * FROM usuario where ID=$user";
     $ejecutarconsulta= mysqli_query($conexion,$consulta);
     $verfilas= mysqli_num_rows($ejecutarconsulta);
     $fila= mysqli_fetch_array($ejecutarconsulta);
@@ -62,7 +51,8 @@ require_once "../conexion.php";
                             <td>'.$fila[4].'</td>
                             <td>'.$fila[5].'</td>
                             <td>'.$fila[6].'</td>
-                           
+                            <td>'.$fila[7].'</td>   
+                            
                         </tr>';
                         $fila=mysqli_fetch_array($ejecutarconsulta);
                 }
@@ -75,5 +65,3 @@ require_once "../conexion.php";
       </table>
       
 </div>
-
-<?php require_once "../assets/includes/footerlogin.php" ?>

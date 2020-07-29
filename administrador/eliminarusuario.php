@@ -2,8 +2,7 @@
 
 </br>
 <div class="catalogo">
-<a href="verProduct.php">
-<form method="get" action="verProduct.php">
+<form method="get" action="verUsuarios.php">
  <button class="btn-large center deep-blue hoverable" type="submit" id="return">Regresar</button>
 </form>
 </a>
@@ -11,7 +10,7 @@
 
 ?>
 <form  method="post">
-<input type="number" name="codigo" maxlength="50" size="80" placeholder="INGRESA EL CODIGO DEL PRODUCTO"> 
+<input type="number" name="usuario" maxlength="50" size="80" placeholder="ID"> 
  <button input type="submit" name="buscar" id="buscardos"> BUSCAR </button>
  <button input type="submit" name="eliminar" id="eliminar" onclick="return ConfirmDelete()"> ELIMINAR </button>
 </form>
@@ -21,7 +20,7 @@
 <script>
 function ConfirmDelete()
 {
-    var $respuesta = confirm("<h2>Estas seguro de que deseas eliminar este producto</h2>");
+    var $respuesta = confirm("Estas seguro de que deseas eliminar este producto");
 
     if ($respuesta == true)
     {
@@ -36,8 +35,8 @@ function ConfirmDelete()
 </script>
 </form>
 <?php
-include("select.php");
-include("eliminar.php");
+include("selectU.php");
+include("eliminarU.php");
 ?>
 
 

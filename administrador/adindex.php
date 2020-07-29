@@ -44,7 +44,9 @@
                     <li>
                         <a href="verUsuarios.php" id="amarillo">Ver usuarios</a>
                     </li>
-                    
+                    <li>
+                        <a href="eliminarusuario.php" id="verde"> Eliminar usuarios</a>
+                    </li>
                 </ul>
             </details>
 

@@ -9,7 +9,7 @@ require_once "../conexion.php";
 
 <div class="container center verpro">
 <form  action="buscar2.php" method="POST">
-<input type="text" name="nombre" id="buscar" placeholder="Buscar..." required minlength="3" maxlength="60" pattern="[a-zA-Z0-9]+">
+<input type="text" name="nombre" id="buscar" placeholder="Buscar..." required minlength="1" maxlength="60" pattern="[a-zA-Z0-9]+">
             <input type="submit"  value="Buscar" id="categorias">
 </form>
 
