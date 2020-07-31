@@ -1,11 +1,14 @@
 <?php 
     require_once "../conexion.php";
-    $dato=$_GET['delete'];
+        $dato=$_GET['delete'];
    
-    $delete= "DELETE FROM ventas where IDventa=$dato";
-    $resultado= mysqli_query($conexion,$delete);
-    if($resultado){
-        header("location: veVentas.php");
-    }
-    
+        $delete= "DELETE FROM ventas where IDventa=$dato";
+        $resultado= mysqli_query($conexion,$delete);
+
+        $delete2= "DELETE FROM subventas where IDventa=$dato";
+        $resultado2= mysqli_query($conexion,$delete2);
+        if($resultado && $resultado2){
+            header("location: veVentas.php");
+        }
+
 ?>

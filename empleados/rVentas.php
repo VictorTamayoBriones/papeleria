@@ -20,43 +20,51 @@
             <div class="card-panel hoverable grey lighten-5" id="divPostForm">
                 <div class="row" id="row">
                     <h3>Registrar ventas</h3>   
-                    <div class="card-panel hoverable  col s12">
+                    <div class="card-panel hoverable  col s12 fm">
                         <div className="input-field ">
                             <input className="container validate" type="text" placeholder="Coidgo de producto" name="codigo" required minlength="3" maxlength="60" pattern="[a-zA-Z0-9]+"/>
                         </div>
                     </div>
 
 
-                    <div class="card-panel hoverable  col s12">
+                    <div class="card-panel hoverable  col s12 fm">
                         <div className="input-field ">
                             <input className="container validate" type="text" placeholder="Nombre de producto" name="nombrePro" required minlength="3" maxlength="60" pattern="[a-z]+"/>
                         </div>
                     </div>
 
-                    <div class="card-panel hoverable  col s5">
+                    <div class="card-panel hoverable  col s5 fm">
                         <div className="input-field ">
                             <input className="container validate" type="text" placeholder="Precio" name="precio"/>
                         </div>
                     </div>
 
-                    <div class="conatiner col s2"></div>
+                    <div class="conatiner col s2 fm"></div>
 
-                    <div class="card-panel hoverable col s5">
+                    <div class="card-panel hoverable col s5 fm">
                         <div className="input-field ">
                             <input className="container validate espacio" type="text" placeholder="Cantidad" name="cantidad" required  maxlength="4"/>
                         </div>
                     </div>
  
-                    <div class="conatiner col s4"></div>
+                    <div class="conatiner col s4 fm"></div>
                 
-                    <div class="card-panel hoverable  col s4">
-                        <div className="input-field ">
+
+                </div>
+
+                <!--    Folio de ventas     -->
+                <div class="row">
+                    <div class="conatiner col s4 fm"></div>
+                        <div class="card-panel hoverable  col s4">
+                            <div className="input-field ">
                             <input className="container validate" type="text"  value="folio: 00<?php echo $id[0] + 1 ; ?>" name="folio" id="folioVenta" disabled/>
                         </div>
-                    </div>  
-                </div>
-                
-                <input type="submit" class="btn-large center deep-blue hoverable" id="registrar" name="registrar" value="Registrar venta">
+                    </div>
+                </div> 
+
+                <input type="submit" class="btn-large center deep-blue hoverable fm" id="registrar" name="registrar" value="Registrar venta">
+
+                 
             </div>
         
     </form>

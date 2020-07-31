@@ -1,6 +1,8 @@
 function agregar(){
-    //crear los nodos
+    var formulario = document.getElementsByClassName('form');
 
+    //crear los nodos
+   
     //divs para el input codigo
     var divPrincipal = document.createElement('div');
     var divSecundario = document.createElement('div');
@@ -66,33 +68,47 @@ function agregar(){
     inputCode.setAttribute('className', 'container validate');
     inputCode.setAttribute('type', 'text');
     inputCode.setAttribute('placeholder', 'Coidgo de producto');
+    inputCode.setAttribute('name', 'codigo2');
+    inputCode.setAttribute('id', 'codigo2');
 
     inputName.setAttribute('className', 'container validate');
     inputName.setAttribute('type', 'text');
     inputName.setAttribute('placeholder', 'Nombre de producto');
-
+    inputName.setAttribute('name', 'nombre2');
+    inputName.setAttribute('id', 'nombre2');
+    
     inputPrecio.setAttribute('className', 'container validate');
     inputPrecio.setAttribute('type', 'text');
     inputPrecio.setAttribute('placeholder', 'Precio');
+    inputPrecio.setAttribute('name', 'precio2');
+    inputPrecio.setAttribute('id', 'precio2');
 
     inputCantidad.setAttribute('className', 'container validate');
     inputCantidad.setAttribute('type', 'text');
     inputCantidad.setAttribute('placeholder', 'Cantidad');
-
+    inputCantidad.setAttribute('name', 'cantidad2');
+    inputCantidad.setAttribute('id', 'cantidad2');
 
     //agregar el elemento al documento
+
     var row = document.getElementById('row');
+   
+    
+
     row.appendChild(divPrincipal);
 
-    var row = document.getElementById('row');
     row.appendChild(divPrincipal1);
 
-    var row = document.getElementById('row');
     row.appendChild(divPrincipal2);
 
-    var row = document.getElementById('row');
     row.appendChild(divSeparacion);
 
-    var row = document.getElementById('row');
     row.appendChild(divPrincipal3);
+
+    
+
+    //posicionamiento
+    var padre = formulario[0].parentNode; //saber el padre de un elemento
+    var hola = formulario[0].parentNode;
+    hola.insertBefore(divPrincipal, formulario[4]);
 }
