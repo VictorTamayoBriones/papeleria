@@ -12,7 +12,9 @@ if(isset($_POST['actualizar']))
         $categoria= $_POST['categoria'];
         $stock= $_POST['stock'];
         $precio= $_POST['precio'];
-        $imagen= $_POST['Imagen'];
+        $imagen= $_POST['imagen'];
+        $a="<img src=img/$imagen>";
+        
 
         $modi= "UPDATE catalogo_p SET 
         nombre_articulo='$nombre',
@@ -20,7 +22,7 @@ if(isset($_POST['actualizar']))
         categoria='$categoria',
         stock='$stock',
         precio='$precio',
-        imagen='$imagen'
+        imagen='$a'
         WHERE ID='$id'";
         $resultado= mysqli_query($conexion, $modi);
         if($resultado)

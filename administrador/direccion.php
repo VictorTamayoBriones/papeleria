@@ -3,19 +3,23 @@
 </br>
 <p class="titulo">Direccion-Usuario</p>
             </br>
-<div class="container center verpro">
+<div class="catalogo">
 <?php
 require_once "../conexion.php";
 ?>
-
+<br>
+<a href="verUsuarios.php">
+<button class="btn-large center deep-blue hoverable" id="return">regresar</button>
+</a>
 <form method="post">
 <input type="number" name="id" maxlength="50" size="80" placeholder="INGRESA EL ID del usuario" required minlength="1" maxlength="60"> 
- <button input type="submit" name="direc"> BUSCAR </button>
+ <button input type="submit" id="buscardos" name="direc"> BUSCAR </button>
 </form>
 <table class="striped center">
         <thead>
           <tr>
               <th>ID</th>
+              <th>USER_NAME</th>
               <th>Calle</th>
               <th>Numero Interior</th>
               <th>Número Exterior</th>
@@ -30,7 +34,7 @@ require_once "../conexion.php";
         if(strlen($_POST['id']) >=1)
         {
             $codigo=$_POST['id'];
-        $consulta= "SELECT IDempleado,calle, No_interior, No_exterior, colonia, C_P FROM direccion where IDempleado=$codigo";
+        $consulta= "SELECT direccion.IDempleado, usuario.user_name, direccion.calle, No_interior, direccion.No_exterior, direccion,colonia, direccion.C_P FROM direccion inner join usuario on usuario.matriculo=direccion.IDempleado where IDempleado=$codigo";
     $ejecutarconsulta= mysqli_query($conexion,$consulta);
     $verfilas= mysqli_num_rows($ejecutarconsulta);
     $fila= mysqli_fetch_array($ejecutarconsulta);
@@ -57,6 +61,7 @@ require_once "../conexion.php";
                             <td>'.$fila[3].'</td>
                             <td>'.$fila[4].'</td>
                             <td>'.$fila[5].'</td>
+                            <td>'.$fila[6].'</td>
                            
                         </tr>';
                         $fila=mysqli_fetch_array($ejecutarconsulta);
@@ -70,7 +75,5 @@ require_once "../conexion.php";
       </table>
       
 </div>
-<a href="verUsuarios.php">
-<img src="../assets/images/l.png" style="height:100px; width:100px">
-    </a>
+
 <?php require_once "../assets/includes/footerlogin.php" ?>

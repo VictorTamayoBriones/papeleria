@@ -1,38 +1,34 @@
-<?php require_once "../assets/includes/navlogin.php" ?>
+<?php require_once "../assets/includes/nav.php" ?>
 
-<div class="catalogo">
-<p class="titulo">Catalogo de productos</p>
-            </br>
-<a href="adindex.php">
-<button class="btn-large center deep-blue hoverable" id="return">Regresar</button>
-</a>
-
-            
-            
-      <form method="get" action="buscar.php">
- <button class="btn-large center deep-blue hoverable"type="submit" id="return">Continuar</button>
-</form>
 </br>
 <div class="container center verpro">
 <?php
 require_once "../conexion.php";
 ?>
-
+<div class="catalogo">
+<p class="titulo"> <a href="catalogo.php"> <font color="black"> Catalogo de productos</font></a></p>
+            </br>
+           
+            <center>
 <table class="striped center">
         <thead>
+
           <tr>
-              <th>ID</th>
-              <th>Código</th>
+          <th>Código</th>
               <th>Nombre</th>
               <th>Categoría</th>
               <th>Stock</th>
-              <th>Precio</th>
+              
               <th>Imagen</th>
           </tr>
         </thead>
-        
-    <?php
-        $consulta= "SELECT * FROM catalogo_p";
+          <?php
+        if(isset($_POST['buscar']))
+    {
+      if(strlen($_POST['nombre'])>=1)
+      {
+        $nombre=$_POST['nombre'];
+        $consulta= "SELECT * FROM usuario where nombre_articulo like "%$nombre%"";
     $ejecutarconsulta= mysqli_query($conexion,$consulta);
     $verfilas= mysqli_num_rows($ejecutarconsulta);
     $fila= mysqli_fetch_array($ejecutarconsulta);
@@ -58,23 +54,23 @@ require_once "../conexion.php";
                             <td>'.$fila[2].'</td>
                             <td>'.$fila[3].'</td>
                             <td>'.$fila[4].'</td>
-                            <td>'.$fila[5].'</td>
-                            <td>'.$fila[6].'</td>
+                              
                             
                         </tr>';
-                        
                         $fila=mysqli_fetch_array($ejecutarconsulta);
                 }
             }
         }
+    }
+}
+              
 
+    
     ?>
         
-      
-<br>
-
-</table>
-
+      </table>
+</center>
+</div><?php require_once "../assets/includes/footer.php" ?>
 </div>
-</div>
-       
+
+

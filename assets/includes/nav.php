@@ -20,7 +20,7 @@
 
             <a href="./index.php">Inicio</a>
             
-            <a href="./catalogo.php">Catalogo</a>
+            <a href="./administrador/catalogo.php">Catalogo</a>
 
             <a href="./index.php#sobreNosotros">Sobre nosotros</a>
    

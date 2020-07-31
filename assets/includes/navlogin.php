@@ -14,17 +14,3 @@
     <link rel="stylesheet" href="../materialize/css/materialize.css">
 
 </head>
-<body>
-    <header>
-        <div class="barra">
-
-            <a href="../index.php">Inicio</a>
-            
-            <a href="../catalogo.php">Catalogo</a>
-
-            <a href="../index.php#sobreNosotros">Sobre nosotros</a>
-
-            <a href="../index.php#contacto">Contacto</a>
-
-        </div>
-    </header>       
