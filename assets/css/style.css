@@ -221,6 +221,13 @@ footer{
     margin: 1% 0;
 }
 
+.table-detalles{
+    background: #00796b !important;
+}
+
+#detalles{
+    position: sticky;
+}
 .agregarPro{
     border-radius: 25px 0px 0px 25px !important;
     margin: 1% 0 !important;
@@ -235,13 +242,30 @@ footer{
     border: none;
     outline-style: none;
     color: #fff;
-    padding: 5px 10px;
     border-radius: 4px;
     cursor: pointer;
+    float:right;
+    font-size: 18px;
+    margin-top: -35px;
+}
+
+#info{
+    background: rgb(33, 119, 248);
+    border: none;
+    outline-style: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+
 }
 
 #delete:hover{
     background: rgb(212, 17, 17);
+}
+
+#info:hover{
+    background: rgb(34, 104, 211);;
 }
 
 #folioVenta{
@@ -625,6 +649,15 @@ input[type=file]{
 
 #dePro:hover{
     background: #216cc2;
+}
+
+.card-ventas{
+    font-size: 19px !important;
+    
+}
+
+.card-ventas li{
+    margin-bottom: 5px;
 }
 @media screen and (max-width:800px){
     .barra{

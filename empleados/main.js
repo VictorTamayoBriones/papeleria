@@ -1,4 +1,6 @@
 function agregar(){
+    var num = 1;
+    
     var formulario = document.getElementsByClassName('form');
 
     //crear los nodos
@@ -64,6 +66,7 @@ function agregar(){
 
     divSecundario3.setAttribute('className', 'input-field ');
 
+    
     //atributos del input
     inputCode.setAttribute('className', 'container validate');
     inputCode.setAttribute('type', 'text');
@@ -104,7 +107,6 @@ function agregar(){
     row.appendChild(divSeparacion);
 
     row.appendChild(divPrincipal3);
-
     
 
     //posicionamiento
