@@ -12,7 +12,7 @@ require_once "../conexion.php";
 <button class="btn-large center deep-blue hoverable" id="return">regresar</button>
 </a>
 <form method="post">
-<input type="number" name="id" maxlength="50" size="80" placeholder="INGRESA EL ID del usuario" required minlength="1" maxlength="60"> 
+<input type="number" name="id" maxlength="50" size="80" placeholder="INGRESA LA MATRICULA DEL USUARIO" required minlength="1" maxlength="60"> 
  <button input type="submit" id="buscardos" name="direc"> BUSCAR </button>
 </form>
 <table class="striped center">
@@ -33,8 +33,8 @@ require_once "../conexion.php";
     {
         if(strlen($_POST['id']) >=1)
         {
-            $codigo=$_POST['id'];
-        $consulta= "SELECT direccion.IDempleado, usuario.user_name, direccion.calle, No_interior, direccion.No_exterior, direccion,colonia, direccion.C_P FROM direccion inner join usuario on usuario.matriculo=direccion.IDempleado where IDempleado=$codigo";
+            $matricula=$_POST['id'];
+        $consulta= "SELECT direccion.IDempleado, usuario.user_name, direccion.calle, direccion.No_interior, direccion.No_exterior, direccion.colonia, direccion.C_P from direccion inner join usuario on direccion.IDempleado = usuario.ID where IDempleado=$matricula";
     $ejecutarconsulta= mysqli_query($conexion,$consulta);
     $verfilas= mysqli_num_rows($ejecutarconsulta);
     $fila= mysqli_fetch_array($ejecutarconsulta);

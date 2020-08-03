@@ -10,7 +10,7 @@
 
 ?>
 <form  method="post">
-<input type="number" name="usuario" maxlength="50" size="80" placeholder="ID"> 
+<input type="number" name="usuario" maxlength="50" size="80" placeholder="MATRICULA"> 
  <button input type="submit" name="buscar" id="buscardos"> BUSCAR </button>
  <button input type="submit" name="eliminar" id="eliminar" onclick="return ConfirmDelete()"> ELIMINAR </button>
 </form>
