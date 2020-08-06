@@ -1,6 +1,8 @@
 <?php require_once "../assets/includes/navlogin.php" ?>
 <?php require_once "../conexion.php" ?>
 <?require_once "actions.php" ?>
+
+<?php if(isset($_SESSION['user_name_ep'])): ?>
 <a href="epindex.php">
 <button class="btn-large center deep-blue hoverable" id="return">Regresar</button>
 </a>
@@ -120,3 +122,5 @@
 ?>
 <script src="ventas.js"></script>
 <script src="jquery.min.js"></script>
+<?php  endif; ?>
+<?php  if(!isset($_SESSION['user_name'])){ header("location: ../sessionError.php"); } ?>
