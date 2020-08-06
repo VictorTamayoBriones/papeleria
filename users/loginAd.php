@@ -5,7 +5,7 @@
 
     <div class="login">
         <form action="login.php" id="loginA" method="POST">
-
+        
             <strong><p class="center">Inicia sesión</p></strong>
             <?php if(isset($_GET['error'])):?>
                 <div class="alertaError" ><p>Datos no validos <br> te quedan 2 intentos</p></div>
@@ -36,5 +36,7 @@
             </form>
         
     </div>
-    
+    <a href="../index.php">
+<button class="btn-large center deep-blue hoverable" id="return">Regresar</button>
+</a>
 <?php require_once "../assets/includes/footerlogin.php" ?>
