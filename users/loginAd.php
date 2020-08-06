@@ -1,4 +1,8 @@
 <?php require_once "../assets/includes/navlogin.php" ?>
+<?php  if(isset($_SESSION['user_name'])): ?>
+<p>Fallo en el sistema, aunexiste una sesión iniciada</p>
+<?php endif; ?>
+
     <div class="login">
         <form action="login.php" id="loginA" method="POST">
 

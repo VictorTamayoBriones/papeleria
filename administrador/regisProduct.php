@@ -1,4 +1,8 @@
 <?php require_once "../assets/includes/navlogin.php" ?>
+<?php require_once "../conexion.php" ?>
+
+<?php if(isset($_SESSION['user_name'])) : ?>
+
 
 <?php if(isset($_GET['exito'])):?>
   <br>  <div class="alertaExito"><p>Registro Exitoso</p></div>
@@ -53,7 +57,7 @@
                 
                     <div class="card-panel hoverable col s5" id="imgProd">
                         <div className="input-field ">
-                        <input  type="text" placeholder="imagen" name="imagen"/>
+                        <input  type="file" placeholder="imagen" name="imagen"/>
 
                         </div>
                     </div>
@@ -67,3 +71,6 @@
 </div>
 
 <?php require_once "../assets/includes/footerlogin.php" ?>
+<?php  endif; ?>
+
+<?php  if(!isset($_SESSION['user_name'])){ header("location: ../sessionError.php"); } ?>

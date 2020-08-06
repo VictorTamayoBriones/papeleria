@@ -1,49 +1,74 @@
 <?php 
 
+//Inicar la conexion a la Bd
 
 require_once "../conexion.php";
 
-   
-    if(isset($_POST['ingreso']))
-    {
-        $usuario = $_POST['usuario'];
-        $pass = sha1($_POST['pass']);
-        $reg= $_POST['rango'];
-    
-        $ver= "SELECT * FROM usuario WHERE user_name='$usuario' and contraseña='$pass' and Rango='$reg'";
-    $resultado= mysqli_query($conexion, $ver);
-    $verfilas= mysqli_num_rows($resultado);
-    if($verfilas >=1)
-    {
-        
-        if($reg == "administrador")
-        {
 
-        ?>
-        <script>
-        window.location="../administrador/adindex.php";
-        </script>
-        <?php
+//Recoger los datos del formulario
+
+if(isset($_POST)){
+    $user = $_POST['usuario'];
+    $rango = $_POST['rango'];
+    $password = $_POST['pass'];
+    $submit = $_POST['ingreso'];
+
+
+    if($rango == 'administrador'){
+
+        //consulta para conprobr las credenciales del usurio
+
+        $sql = "SELECT * FROM usuario WHERE user_name = '$user'";
+        $login = mysqli_query($conexion, $sql);
+        //var_dump($user);
+        //var_dump($rango);
+        //var_dump($password);
+
+        if($login && mysqli_num_rows($login) ==1){
+            $user = mysqli_fetch_assoc($login);
+
+
+            if($password == $user['password']){
+            
+                $_SESSION['user_name'] = $user;        
+            
+                if(isset($_SESSION['user_name'])){
+                    //var_dump($_SESSION);
+                }
+            }
+            header('location: ../administrador/adindex.php');
+        //die;
+        }else{
+
+            header('location: loginAd.php?error');
         }
-        else if($reg == "empleado")
-        {
-            ?>
-            <script>
-            window.location="../empleados/epindex.php";
-            </script>
-            <?php   
+
+
+    }elseif ($rango == 'empleado') {
+
+        //consulta para conprobr las credenciales del usurio
+
+        $sql = "SELECT * FROM usuario WHERE user_name = '$user'";
+        $login = mysqli_query($conexion, $sql);
+        //var_dump($user);
+        //var_dump($rango);
+        //var_dump($password);
+        
+        if($login && mysqli_num_rows($login) ==1){
+            $user = mysqli_fetch_assoc($login);
+        
+        
+            if($password == $user['password'])                    
+                $_SESSION['user_name_ep'] = $user;                           
+                if(isset($_SESSION['user_name_ep'])){
+                    //var_dump($_SESSION);
+                }
+            }
+            header('location: ../empleados/epindex.php');
+        //die;
+        }else{
+        
+            header('location: loginAd.php?error');
         }
-        else{
-            echo("ERROR, coloque empleado o usuario");
-        }
-    }
-    else{
-        ?>
-            <a href="http://localhost/GitHub/papeleria/users/loginAd.php">
-            <?php
-            echo("<h1> <center> Error. Complete los formularios </center> </h1>");
-            ?>
-            </a>
-            <?php
-    }
+        
 }

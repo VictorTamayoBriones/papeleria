@@ -1,4 +1,8 @@
 <?php require_once "../assets/includes/navlogin.php" ?>
+<?php require_once "../conexion.php" ?>
+
+<?php   if(isset($_SESSION['user_name'])):    ?>
+
     <section id="empleados">
         
         <div class="perfil">    
@@ -6,8 +10,10 @@
 
             <p id="bnu">Bienvenido usuario</p> 
             <p id="dateu">Martes 27 de abril</p>
-
-            <a href="../index.php" ><h5 class="logout"> Cerrar Sesión </h5></a>
+            
+            <form action="../logout.php">
+            <input type="submit" value="Cerra sesión" class="logout">
+            </form>
         </div>
 
         <div class="op">
@@ -72,3 +78,5 @@
 
 <!--<script src="despliegue.js"></script>-->
 
+<?php endif; ?>
+<?php  if(!isset($_SESSION['user_name'])){ header("location: ../sessionError.php"); } ?>

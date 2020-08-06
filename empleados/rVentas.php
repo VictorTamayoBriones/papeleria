@@ -1,4 +1,3 @@
-<?php require_once "../assets/includes/navlogin.php" ?>
 <?php require_once "../conexion.php" ?>
 <?php               
     $consulta= "select idventa from ventas order by idventa desc limit 1";
@@ -6,6 +5,9 @@
     $verid= mysqli_num_rows($ejecutarconsulta);
     $id= mysqli_fetch_array($ejecutarconsulta);
 ?>
+<?php if(isset($_SESSION['user_name_ep'])): ?>
+<?php require_once "../assets/includes/navlogin.php" ?>
+
 <input type="submit" class="btn-large center deep-blue hoverable agregarPro" id="actualizar" name="agregar" value="Agregar Producto" onclick="agregar()">
 
 
@@ -72,3 +74,6 @@
     <script src="main.js"></script>
 </div>
 <?php require_once "../assets/includes/footerlogin.php" ?>
+
+<?php endif; ?>
+<?php  if(!isset($_SESSION['user_name'])){ header("location: ../sessionError.php"); } ?>
