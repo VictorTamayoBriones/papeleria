@@ -1,17 +1,16 @@
 <?php require_once "../assets/includes/navlogin.php" ?>
 
 <div class="catalogo">
-<p class="titulo">Catalogo de productos</p>
+
             </br>
 <a href="adindex.php">
 <button class="btn-large center deep-blue hoverable" id="return">Regresar</button>
 </a>
+<br>     
+<a href="buscar.php"> 
+ <button  class="btn-large center deep-blue hoverable"type="submit" id="return">Continuar</button></a>
+ <p class="titulo">Catalogo de productos</p>
 
-            
-            
-      <form method="get" action="buscar.php">
- <button class="btn-large center deep-blue hoverable"type="submit" id="return">Continuar</button>
-</form>
 </br>
 <div class="container center verpro">
 <?php
@@ -77,4 +76,4 @@ require_once "../conexion.php";
 
 </div>
 </div>
-       
+<?php require_once "../assets/includes/footerlogin.php" ?> 

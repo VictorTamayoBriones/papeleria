@@ -32,7 +32,5 @@
             </form>
         
     </div>
-    <a href="../index.php">
-<img src="../assets/images/l.png" style="height:100px; width:100px">
-    </a>
+    
 <?php require_once "../assets/includes/footerlogin.php" ?>

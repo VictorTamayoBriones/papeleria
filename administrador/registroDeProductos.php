@@ -32,13 +32,6 @@ if(isset($_POST['registrar'])){
         }
 
     }
-    ?>
-    <h1><center>Error datos no almacenados <br> intentelo de nuevo</center></h1>
-    <center>
-    <a href="regisProduct.php">
-<img src="../assets/images/l.png" style="height:100px; width:100px">
-    </a>
-    </center>
-            <?php
+  
 }
 ?>
