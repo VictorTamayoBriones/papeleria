@@ -33,13 +33,7 @@ if(isset($_POST['registrar']))
         $res= mysqli_query($conexion, $almacena);
         if($resultado && $res)
         {
-            ?>
-            <a href="http://localhost/GitHub/papeleria/administrador/userRegis.php">
-            <?php
-            echo("<h1> <center> Exito. Datos  almacenados </center> </h1>");
-            ?>
-            </a>
-            <?php
+            header ("location: regisProduct.php?exito");
         }
         else{ ?>
             <a href="http://localhost/GitHub/papeleria/administrador/userRegis.php">

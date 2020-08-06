@@ -1,42 +1,30 @@
-<?php require_once "../assets/includes/navlogin.php" ?>
-
-<?php require_once "../conexion.php" ?>
-
-<?php if(isset($_SESSION['user_name'])) : ?>
-
-<div class="catalogo">
-<br>
-<a href="adindex.php">
-<button class="btn-large center deep-blue hoverable" id="return">Regresar</button>
-</a>
-<br>
-<a href="direccion.php">
-<button class="btn-large center deep-blue hoverable" id="return">DIRECCIÓN</button>
-</a>
 
 
-            <p class="titulo">USUARIOS</p>
-            </br>
 </br>
 <div class="container center verpro">
 <?php
 require_once "../conexion.php";
 ?>
-
 <table class="striped center">
         <thead>
           <tr>
-              <th>ID</th>
-              <th>USER_NAME</th>
+              
+              <th>Código</th>
               <th>Nombre</th>
-              <th>Apellido Paterno</th>
-              <th>Apellido Materno</th>
-              <th>Telefono</th>
-              <th>Rango</th>
+              <th>Categoría</th>
+              <th>Stock</th>
+              
+              <th>Imagen</th>
           </tr>
         </thead>
     <?php
-        $consulta= "SELECT ID, user_name, Nombre, Ape_pat, Ape_mat, telefono, Rango FROM usuario order by ID";
+    if(isset($_POST['buscar']))
+    {
+        if(strlen($_POST['nombre']) >=1)
+        {
+            $nombre=$_POST['nombre'];
+            
+        $consulta= "SELECT codigo, nombre_articulo, categoria, stock, imagen FROM catalogo_p where nombre_articulo like "%$nombre%"";
     $ejecutarconsulta= mysqli_query($conexion,$consulta);
     $verfilas= mysqli_num_rows($ejecutarconsulta);
     $fila= mysqli_fetch_array($ejecutarconsulta);
@@ -62,25 +50,17 @@ require_once "../conexion.php";
                             <td>'.$fila[2].'</td>
                             <td>'.$fila[3].'</td>
                             <td>'.$fila[4].'</td>
-                            <td>'.$fila[5].'</td>
-                            <td>'.$fila[6].'</td>
+                            
                             
                         </tr>';
                         $fila=mysqli_fetch_array($ejecutarconsulta);
                 }
             }
         }
-
+    }
+}
     ?>
         
       </table>
-      <br>
-      <br>
       
-<br>
 </div>
-</div>
-<?php require_once "../assets/includes/footerlogin.php" ?>
-
-    <?php  endif; ?>
-    <?php  if(!isset($_SESSION['user_name'])){ header("location: ../sessionError.php"); } ?>

@@ -8,11 +8,11 @@ require_once "../conexion.php";
             
 
 <div class="container center verpro">
-<form  action="buscar2.php" method="POST">
-<input type="text" name="nombre" id="buscar" placeholder="Buscar..." required minlength="1" maxlength="60" pattern="[a-zA-Z0-9]+">
-            <input type="submit"  value="Buscar" id="categorias">
+<a href="buscar2.php">
+<form method="get" action="buscar2.php">
+ <button class="btn-large center deep-blue hoverable" type="submit" id="return">BUSCAR</button>
 </form>
-
+</a>
 <br>
 </br>
 

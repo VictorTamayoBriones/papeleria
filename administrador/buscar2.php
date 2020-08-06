@@ -1,76 +1,26 @@
-<?php require_once "../assets/includes/nav.php" ?>
+<?php require_once "../assets/includes/navlogin.php" ?>
 
 </br>
-<div class="container center verpro">
-<?php
-require_once "../conexion.php";
-?>
 <div class="catalogo">
-<p class="titulo"> <a href="catalogo.php"> <font color="black"> Catalogo de productos</font></a></p>
-            </br>
-           
-            <center>
-<table class="striped center">
-        <thead>
+<a href="catalogo.php">
+<form method="get" action="catalogo.php">
+ <button class="btn-large center deep-blue hoverable" type="submit" id="return">REGRESAR</button>
+</form>
+</a>
+<br>
 
-          <tr>
-          <th>Código</th>
-              <th>Nombre</th>
-              <th>Categoría</th>
-              <th>Stock</th>
-              
-              <th>Imagen</th>
-          </tr>
-        </thead>
-          <?php
-        if(isset($_POST['buscar']))
-    {
-      if(strlen($_POST['nombre'])>=1)
-      {
-        $nombre=$_POST['nombre'];
-        $consulta= "SELECT * FROM usuario where nombre_articulo like "%$nombre%"";
-    $ejecutarconsulta= mysqli_query($conexion,$consulta);
-    $verfilas= mysqli_num_rows($ejecutarconsulta);
-    $fila= mysqli_fetch_array($ejecutarconsulta);
+<form  method="post">
+<input type="text" name="nombre" maxlength="50" size="80" placeholder="......."> 
+ <button input type="submit" name="buscar" id="buscardos"> BUSCAR </button>
 
-    if(!$ejecutarconsulta)
-    {
-        echo("ERROR en la consulta");
-    }
-    else
-        {
-            if($verfilas<1)
-            {
-                echo("<tr><td>Sin registros</td></tr>");
-            }
-            else
-            {
-                for($x=0; $x<=$fila; $x++)
-                {
-                    echo'
-                        <tr>
-                            <td>'.$fila[0].'</td>
-                            <td>'.$fila[1].'</td>
-                            <td>'.$fila[2].'</td>
-                            <td>'.$fila[3].'</td>
-                            <td>'.$fila[4].'</td>
-                              
-                            
-                        </tr>';
-                        $fila=mysqli_fetch_array($ejecutarconsulta);
-                }
-            }
-        }
-    }
-}
-              
+</form>
 
-    
-    ?>
-        
-      </table>
-</center>
-</div><?php require_once "../assets/includes/footer.php" ?>
+</form>
+<?php
+include("busqueda_catalogo.php");
+
+?>
+
+
+
 </div>
-
-
