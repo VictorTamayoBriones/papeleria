@@ -1,10 +1,10 @@
-
+<?php
+/*$conexion2= mysqli_connect("localhost","catalogo","123","papeleria");*/
+require_once "../conexion.php";
+?>
 
 </br>
 <div class="container center verpro">
-<?php
-require_once "../conexion.php";
-?>
 <table class="striped center">
         <thead>
           <tr>
@@ -21,12 +21,13 @@ require_once "../conexion.php";
     if(isset($_POST['buscar']))
     {
         if(strlen($_POST['nombre']) >=1)
-        {
+        {   $_POST['nombre']="";
             $nombre=$_POST['nombre'];
             
-        $consulta= "SELECT codigo, nombre_articulo, categoria, stock, imagen FROM catalogo_p where nombre_articulo like "%$nombre%"";
+        $consulta= "SELECT codigo, nombre_articulo, categoria, stock, imagen FROM catalogo_p where nombre_articulo like '%".$nombre."%'or categoria like '%".$nombre."%' ";
     $ejecutarconsulta= mysqli_query($conexion,$consulta);
     $verfilas= mysqli_num_rows($ejecutarconsulta);
+    echo("".$verfilas);
     $fila= mysqli_fetch_array($ejecutarconsulta);
 
     if(!$ejecutarconsulta)
