@@ -1,12 +1,8 @@
 <?php 
-
 //Inicar la conexion a la Bd
-
 require_once "../conexion.php";
 
-
 //Recoger los datos del formulario
-
 if(isset($_POST)){
     $user = $_POST['usuario'];
     $password = ($_POST['pass']);
@@ -25,7 +21,6 @@ if(isset($_POST)){
             if($password == $user['password']){
         
                 $_SESSION['user_name'] = $user;        
-            
                 if(isset($_SESSION['user_name'])){
                     //var_dump($_SESSION);
                 }
@@ -38,8 +33,8 @@ if(isset($_POST)){
         
                 $_SESSION['user_name_ep'] = $user;        
             
+
                 if(isset($_SESSION['user_name_ep'])){
-                    //var_dump($_SESSION);
                 }
             }
             header('location: ../empleados/epindex.php');
@@ -52,3 +47,4 @@ if(isset($_POST)){
     }
 
 }
+

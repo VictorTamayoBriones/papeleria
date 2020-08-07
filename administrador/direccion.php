@@ -1,8 +1,6 @@
 <?php require_once "../assets/includes/navlogin.php" ?>
 
-</br>
-<p class="titulo">Direccion-Usuario</p>
-            </br>
+
 <div class="catalogo">
 <?php
 require_once "../conexion.php";
@@ -12,6 +10,9 @@ require_once "../conexion.php";
 <button class="btn-large center deep-blue hoverable" id="return">regresar</button>
 </a>
 <form method="post">
+</br>
+<p class="titulo">Direccion-Usuario</p>
+            </br>
 <input type="number" name="id" maxlength="50" size="80" placeholder="INGRESA LA MATRICULA DEL USUARIO" required minlength="1" maxlength="60"> 
  <button input type="submit" id="buscardos" name="direc"> BUSCAR </button>
 </form>
