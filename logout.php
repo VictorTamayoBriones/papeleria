@@ -5,5 +5,9 @@
         session_destroy();
     }
 
+    if(isset($_SESSION['user_name_ep'])){
+        session_destroy();
+    }
+
     header("location: ./users/loginAd.php");
 ?>

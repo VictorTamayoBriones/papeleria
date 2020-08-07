@@ -123,4 +123,4 @@
 <script src="ventas.js"></script>
 <script src="jquery.min.js"></script>
 <?php  endif; ?>
-<?php  if(!isset($_SESSION['user_name'])){ header("location: ../sessionError.php"); } ?>
+<?php  if(!isset($_SESSION['user_name_ep'])){ header("location: ../sessionError.php"); } ?>

@@ -11,5 +11,21 @@
         <p>Ops, error de sesión</p>
         <p>Parece que por el mento este contenido no esta disponible</p>
     </section>
+    <script>
+    (function(){
+
+        function redir(){
+            window.location="./users/loginAd.php";
+        }
+
+        function aviso(){
+            alert("Error inicio de sesion necesario");
+        }
+
+        setTimeout(aviso,2000);
+        setTimeout(redir,5000);
+
+    }())
+    </script>
 </body>
 </html>

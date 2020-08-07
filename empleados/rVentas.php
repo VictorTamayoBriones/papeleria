@@ -4,11 +4,18 @@
     $ejecutarconsulta= mysqli_query($conexion,$consulta); 
     $verid= mysqli_num_rows($ejecutarconsulta);
     $id= mysqli_fetch_array($ejecutarconsulta);
+
+    $sql="select count(idventa) from subventas where idventa = $id[0];";
+    $startSql= mysqli_query($conexion,$sql);
+    $show= mysqli_num_rows($startSql);
+    $idC=mysqli_fetch_array($startSql);
+    $idCampo = 2 + $idC[0];
+    //var_dump($idCampo); die;
 ?>
 <?php if(isset($_SESSION['user_name_ep'])): ?>
 <?php require_once "../assets/includes/navlogin.php" ?>
 
-<input type="submit" class="btn-large center deep-blue hoverable agregarPro" id="actualizar" name="agregar" value="Agregar Producto" onclick="agregar()">
+<input type="submit" class="btn-large center deep-blue hoverable agregarPro" id="actualizar" name="agregar" value="Agregar Producto" onclick="plus()">
 
 
 <a href="epindex.php">
@@ -71,9 +78,9 @@
         
     </form>
     
-    <script src="main.js"></script>
+    <script src="../main.js"></script>
 </div>
 <?php require_once "../assets/includes/footerlogin.php" ?>
 
 <?php endif; ?>
-<?php  if(!isset($_SESSION['user_name'])){ header("location: ../sessionError.php"); } ?>
+<?php  if(!isset($_SESSION['user_name_ep'])){ header("location: ../sessionError.php"); } ?>

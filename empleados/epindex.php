@@ -29,4 +29,4 @@
 <?php require_once "../assets/includes/footerlogin.php" ?>
 
 <?php endif; ?>
-<?php  if(!isset($_SESSION['user_name'])){ header("location: ../sessionError.php"); } ?>
+<?php  if(!isset($_SESSION['user_name_ep'])){ header("location: ../sessionError.php"); } ?>

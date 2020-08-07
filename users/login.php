@@ -9,27 +9,21 @@ require_once "../conexion.php";
 
 if(isset($_POST)){
     $user = $_POST['usuario'];
-    $rango = $_POST['rango'];
-    $password = $_POST['pass'];
+    $password = ($_POST['pass']);
     $submit = $_POST['ingreso'];
 
+    //consulta para conprobr las credenciales del usurio
 
-    if($rango == 'administrador'){
+    $sql = "SELECT * FROM usuario WHERE user_name = '$user'";
+    $login = mysqli_query($conexion, $sql);
 
-        //consulta para conprobr las credenciales del usurio
+    if($login && mysqli_num_rows($login) ==1){
+        $user = mysqli_fetch_assoc($login);
 
-        $sql = "SELECT * FROM usuario WHERE user_name = '$user'";
-        $login = mysqli_query($conexion, $sql);
-        //var_dump($user);
-        //var_dump($rango);
-        //var_dump($password);
-
-        if($login && mysqli_num_rows($login) ==1){
-            $user = mysqli_fetch_assoc($login);
-
+        if($user['Rango']=='administrador'){
 
             if($password == $user['password']){
-            
+        
                 $_SESSION['user_name'] = $user;        
             
                 if(isset($_SESSION['user_name'])){
@@ -37,38 +31,24 @@ if(isset($_POST)){
                 }
             }
             header('location: ../administrador/adindex.php');
-        //die;
-        }else{
 
-            header('location: loginAd.php?error');
-        }
+        }elseif($user['Rango']=='empleado'){
 
-
-    }elseif ($rango == 'empleado') {
-
-        //consulta para conprobr las credenciales del usurio
-
-        $sql = "SELECT * FROM usuario WHERE user_name = '$user'";
-        $login = mysqli_query($conexion, $sql);
-        //var_dump($user);
-        //var_dump($rango);
-        //var_dump($password);
+            if($password == $user['password']){
         
-        if($login && mysqli_num_rows($login) ==1){
-            $user = mysqli_fetch_assoc($login);
-        
-        
-            if($password == $user['password'])                    
-                $_SESSION['user_name_ep'] = $user;                           
+                $_SESSION['user_name_ep'] = $user;        
+            
                 if(isset($_SESSION['user_name_ep'])){
                     //var_dump($_SESSION);
                 }
             }
             header('location: ../empleados/epindex.php');
-        //die;
-        }else{
-        
-            header('location: loginAd.php?error');
+            
         }
-        
+
+    }else{
+
+        header('location: loginAd.php?error');
+    }
+
 }

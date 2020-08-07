@@ -23,7 +23,7 @@
                 
                 <input type="text" name="usuario" id="usuario" placeholder="    ingresa tu usuario" required minlength="3" maxlength="30" pattern="[A-Za-z0-9]+" <?php if(isset($_GET['3rr0r'])):?> disabled <?php endif ?>>
 
-                <input type="text" name="rango" id="usuario" placeholder="   Rango" required minlength="5" maxlength="30" pattern="[A-Za-z0-9]+" <?php if(isset($_GET['3rr0r'])):?> disabled <?php endif ?>>
+                <!--<input type="text" name="rango" id="usuario" placeholder="   Rango" required minlength="5" maxlength="30" pattern="[A-Za-z0-9]+" <?php if(isset($_GET['3rr0r'])):?> disabled <?php endif ?>>-->
 
                 <input type="password" name="pass" id="pass" placeholder="  ingresa tu contraseña" required minlength="6" maxlength="30" pattern="[0-9]+" <?php if(isset($_GET['3rr0r'])):?> disabled <?php endif ?>>
                 

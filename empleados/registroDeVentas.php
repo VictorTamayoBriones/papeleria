@@ -1,6 +1,6 @@
 <?php
 require_once "../conexion.php";
-
+var_dump($_POST);die;
 $query= "select idventa from ventas order by idventa desc limit 1";
 $start= mysqli_query($conexion,$query); 
 $verid= mysqli_num_rows($start);
