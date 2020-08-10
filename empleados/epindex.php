@@ -1,4 +1,4 @@
-<?php require_once "../assets/includes/navlogin.php" ?>
+<?php require_once "../assets/includes/nav2.php" ?>
 <?php require_once "../conexion.php" ?>
 
 <?php if(isset($_SESSION['user_name_ep'])): ?>
@@ -26,7 +26,7 @@
 
 <br><br><br><br>
 
-<?php require_once "../assets/includes/footerlogin.php" ?>
+<?php require_once "../assets/includes/footer2.php" ?>
 
 <?php endif; ?>
 <?php  if(!isset($_SESSION['user_name_ep'])){ header("location: ../sessionError.php"); } ?>

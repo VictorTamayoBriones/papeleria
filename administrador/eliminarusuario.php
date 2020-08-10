@@ -1,4 +1,4 @@
-<?php require_once "../assets/includes/navlogin.php" ?>
+<?php require_once "../assets/includes/nav2.php" ?>
 <?php require_once "../conexion.php" ?>
 
 <?php if(isset($_SESSION['user_name'])) : ?>
@@ -43,7 +43,7 @@ include("eliminarU.php");
 ?>
 
 
-
+<?php require_once "../assets/includes/footer2.php" ?>
 </div>
 
 <?php    endif;   ?>

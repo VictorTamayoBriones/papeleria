@@ -1,6 +1,7 @@
-<?php require_once "../assets/includes/navlogin.php" ?>
+<?php require_once "../assets/includes/nav2.php" ?>
 
 </br>
+<div>
 <div class="catalogo">
 <a href="verProduct.php">
 <form method="get" action="verProduct.php">
@@ -43,3 +44,5 @@ include("eliminar.php");
 
 
 </div>
+</div>
+
