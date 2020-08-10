@@ -26,10 +26,9 @@
             //consultar subventas
 
         $consulta ="SELECT * FROM subventas where idventa = $mostrar[0]";
-        $inicarConsulta= mysqli_query($conexion,$consulta);
-        $filas= mysqli_num_rows($inicarConsulta);
-        $ver= mysqli_fetch_array($inicarConsulta);
-
+        $ejecutarconsulta= mysqli_query($conexion,$consulta);
+        $verfilas= mysqli_num_rows($ejecutarconsulta);
+        $fila= mysqli_fetch_array($ejecutarconsulta);
 
         //conteo de productos
 
@@ -83,29 +82,48 @@
                     <th>Fecha: $mostrar[5]</th>
                     <th>Realizo: $mostrar[6]</th>
                 </table>
-                    
+                
                 <table class='centered'>    
                 <tr>
                     <th>C.producto</th>
                     <th>Cantidad</th>
                     <th>Total</th>
                     <th>Producto</th>
-                </tr>    
-
+                </tr> 
+                
+                
                 <tr>
                     <td>$mostrar[1]</td>
                     <td>$mostrar[2]</td>
                     <td>$mostrar[4]</td>
                     <td>$mostrar[3]</td>
-                </tr>    
+                </tr>";
+             
+              for($x=0; $x<=$fila; $x++){
+                    
+                   echo"
+                   <table class='centered'>    
+                       <tr class='sub-ventas'>
+                        <th>    </th>
+                        <th>    </th>
+                        <th>    </th>
+                        <th>    </th>
+                       </tr>
 
-                <tr>    
-                    <td>$ver[2]</td>
-                    <td>$ver[3]</td>
-                    <td>$ver[5]</td>
-                    <td>$ver[4]</td>
-                </tr>
-                </table>
+                       <tr>    
+                           <td>$fila[2]</td>
+                           <td>$fila[3]</td>
+                           <td>$fila[5]</td>
+                           <td>$fila[4]</td>
+                       </tr>
+                    </table>   
+                </table>";
+                $fila=mysqli_fetch_array($ejecutarconsulta);
+
+
+
+             }
+        echo"                
             </span>
         </div>
           </div>
