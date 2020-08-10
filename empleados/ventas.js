@@ -11,5 +11,4 @@ var panels = document.getElementsByClassName('card-panel');
 function detalles(identi){
 
     $(panels[identi]).slideToggle();
-    
 }

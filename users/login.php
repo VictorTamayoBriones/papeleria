@@ -5,7 +5,7 @@ require_once "../conexion.php";
 //Recoger los datos del formulario
 if(isset($_POST)){
     $user = $_POST['usuario'];
-    $password = ($_POST['pass']);
+    $password = $_POST['pass'];
     $submit = $_POST['ingreso'];
 
     //consulta para conprobr las credenciales del usurio
@@ -15,7 +15,7 @@ if(isset($_POST)){
 
     if($login && mysqli_num_rows($login) ==1){
         $user = mysqli_fetch_assoc($login);
-
+    
         if($user['Rango']=='administrador'){
 
             if($password == $user['password']){
