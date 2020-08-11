@@ -24,7 +24,7 @@ require_once "../conexion.php";
         {   $_POST['nombre']="";
             $nombre=$_POST['nombre'];
             
-        $consulta= "SELECT codigo, nombre_articulo, categoria, stock, imagen FROM catalogo_p where nombre_articulo like '%".$nombre."%'or categoria like '%".$nombre."%' ";
+        $consulta= "SELECT codigo, nombre_articulo, categoria, stock, imagen FROM catalogo_p where nombre_articulo like '%$nombre%'or categoria like '%$nombre."%' ";
     $ejecutarconsulta= mysqli_query($conexion,$consulta);
     $verfilas= mysqli_num_rows($ejecutarconsulta);
     echo("".$verfilas);
