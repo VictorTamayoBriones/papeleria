@@ -1,43 +1,59 @@
+<?php require_once "../assets/includes/nav2.php" ?>
 <?php require_once "../conexion.php" ?>
-
-<div class="container center" border-radius="55px" >
-<form action="EdicionDeProductos.php" method="POST" class="container">
+<?php if(isset($_SESSION['user_name'])) : ?>
+<br>
+<a href="editarProduct.php">
+<button class="btn-large center deep-blue hoverable" id="return">Regresar</button>
+</a>
 <?php
-$a=$_POST['ID'];
-if(strlen($a)>=1)
-                           {
-                            
-                            //echo("variable a= <br>" .$a);
-                            /*var_dump($a);die;
-                            echo("asasas <br>".$a);*/
-                            $consulta="SELECT * FROM catalogo_p where ID=$a";
+
+    if(strlen('ID2')>=1)
+    {
+        $a1=$_POST['ID2'];
+    ?>
+      
+                           <div class="container center" border-radius="55px" > 
+                          
+                            <form action="EdicionDeProductos.php" method="POST" >
+                            <div class="card-panel hoverable grey lighten-5">
+                            <?php
+                            $consulta="SELECT * FROM catalogo_p where codigo=$a1 or ID=$a1";
                             $ejecutarconsulta= mysqli_query($conexion,$consulta);
-                            $user = mysqli_fetch_assoc($ejecutarconsulta);
+                             $user = mysqli_fetch_assoc($ejecutarconsulta);
                            ?>
-
-<input type="text" name="nombre" placeholder="NOMBRE DEL ARTICULO: <?php echo $user['nombre_articulo']?>"  >
+<h5>NOMBRE DEL ARTICULO:</h5>
+<input className="container validate" type="text" name="nombre" value="<?php echo $user['nombre_articulo']?>" required minlength="1" maxlength="60" >
                             
-               
-<input  type="text" name="codigo" placeholder="CODIGO DEL ARTICULO: <?php echo $user['codigo']?>"  >
+<h5>CODIGO DEL ARTICULO:</h5>               <p><font color="red">No cambiar codigo</font></p>
+<input className="container validate" type="text" name="codigos" value="<?php echo $user['codigo']?>" required minlength="1" maxlength="60" >
    
-
-<input type="number" name="precio" placeholder="PRECIO DEL ARTICULO: <?php echo $user['precio']?>">
+<h5>PRECIO DEL ARTICULO:</h5>               <p> <font color="red">Campo numerico obligatorio</font></p>
+<input className="container validate" type="text" name="precio" value="<?php echo $user['precio']?>" required minlength="1" maxlength="60" pattern="[0-9]+">
                         
-
-<input  type="text" name="categoria" placeholder="CATEGORIA DEL ARTICULO: <?php echo $user['categoria']?>">
+<h5>CATEGORIA DEL ARTICULO:</h5>
+<input className="container validate" type="text" name="categoria" value="<?php echo $user['categoria']?>" required minlength="1" maxlength="60" >
                        
-
- <input  type="number" name="stock" placeholder="STOCK DEL ARTICULO: <?php echo $user['stock']?>" >
+<h5>STOCK DEL ARTICULO:</h5>                <p> <font color="red">Campo numerico obligatorio</font></p>
+ <input className="container validate" type="text" name="stock" value="<?php echo $user['stock']?>" required minlength="1" maxlength="60" pattern="[0-9]+"/>
                        
-                
-<input  type="text" name="imagen" placeholder="IMAGEN">
+<h5>IMAGEN:</h5>                             <p> <font color="red">Campo obligatorio</font></p>
+<input className="container validate" type="text" name="imagen" placeholder="IMAGEN" required minlength="1" maxlength="60" >
+
+<input  type="text" name="codigo1" value="CODIGO DEL ARTICULO: <?php echo $user['codigo']?>"disabled >
 
 <center>
  <input type="submit" class="btn-large center deep-blue hoverable"  name="actualizar" value="Actualizar datos">
  </center>
- <?php
-                           }
-                           ?>
- 
- </form>
+            </div>   
+    </form>
+    
 </div>
+<?php
+}
+?>
+
+<?php require_once "../assets/includes/footer2.php" ?>
+<?php endif; ?>
+
+<?php  if(!isset($_SESSION['user_name'])){ header("location: ../sessionError.php"); } ?>
+    

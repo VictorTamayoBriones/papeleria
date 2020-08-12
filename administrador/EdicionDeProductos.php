@@ -23,7 +23,7 @@ if(isset($_POST['actualizar']))
         echo("<br>imagen:".$a);
         echo("<br>codigoP:".$aa);*/
       
-
+        
         $modi= "UPDATE catalogo_p SET 
         nombre_articulo='$nombre',
         categoria='$categoria',

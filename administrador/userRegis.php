@@ -33,14 +33,14 @@
 
                     <div class="card-panel hoverable  col s12">
                         <div className="input-field ">
-                            <input className="container validate" type="text" placeholder="Nombre" name="nombre" required minlength="3" maxlength="60"/>
+                            <input className="container validate" type="text" placeholder="Nombre" name="nombre" required minlength="3" maxlength="60" pattern="[a-zA-Z0-9]+"/>
                         </div>
                     </div>
 
                     
                     <div class="card-panel hoverable  col s5">
                         <div className="input-field ">
-                            <input className="container validate" type="text" placeholder="apellido paterno" name="Ape_pat" required minlength="3" maxlength="60"/>
+                            <input className="container validate" type="text" placeholder="Apellido paterno" name="Ape_pat" required minlength="3" maxlength="60" pattern="[a-zA-Z0-9]+"/>
                         </div>
                     </div>
                     
@@ -48,13 +48,13 @@
 
                     <div class="card-panel hoverable  col s5">
                         <div className="input-field ">
-                            <input className="container validate" type="text" placeholder="apellido materno" name="Ape_mat" required minlength="3" maxlength="60"/>
+                            <input className="container validate" type="text" placeholder="Apellido materno" name="Ape_mat" required minlength="3" maxlength="60" pattern="[a-zA-Z0-9]+"/>
                         </div>
                     </div>
 
                     <div class="card-panel hoverable  col s5">
                         <div className="input-field ">
-                            <input className="container validate" type="text" placeholder="Telefono" name="telefono" required minlength="10" maxlength="60"/>
+                            <input className="container validate" type="number" placeholder="Telefono" name="telefono" required minlength="10" maxlength="60" pattern="[0-9]+"/>
                         </div>
                     </div>
 
@@ -62,7 +62,7 @@
 
                     <div class="card-panel hoverable  col s5">
                         <div className="input-field ">
-                            <input className="container validate" type="text" placeholder="Rango (administrador / empleado)" name="Rango" required minlength="3" maxlength="60"/>
+                            <input className="container validate" type="text" placeholder="Rango (administrador / empleado)" name="Rango" required minlength="3" maxlength="60" pattern="[a-zA-Z0-9]+"/>
                         </div>
                     </div>
                     
@@ -99,7 +99,7 @@
 
                     <div class="card-panel hoverable  col s4">
                         <div className="input-field ">
-                            <input className="container validate" type="number" placeholder="C_P" name="C_P" required minlength="3" maxlength="60"/>
+                            <input className="container validate" type="number" placeholder="C_P" name="C_P" required minlength="3" maxlength="60" pattern="[0-9]+"/>
                         </div>
                     </div>
                     <div class="conatiner col s3"></div>

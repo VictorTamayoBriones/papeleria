@@ -11,8 +11,8 @@ if(isset($_POST['registrar']))
 {
         
         $usuario= $_POST['user'];
-        $contraseña=  sha1($_POST['contraseña']);
-        $contra= sha1($_POST['contra']);
+        $contraseña=  $_POST['contraseña'];
+        $contra= $_POST['contra'];
         $nombre= $_POST['nombre'];
         $apep= $_POST['Ape_pat'];
         $apem= $_POST['Ape_mat'];
@@ -23,14 +23,16 @@ if(isset($_POST['registrar']))
         $noe= $_POST['No_exterior'];
         $col= $_POST['Colonia'];
         $cp= $_POST['C_P'];
-
-        if($contraseña == $contra)
+        
+      if($contraseña == $contra)
      {
+        
 
-        $almacenar= "INSERT INTO usuario( user_name, contraseña, Nombre, Ape_pat, Ape_mat, telefono, Rango) VALUES ('$usuario', '$contraseña', '$nombre', '$apep', '$apem', '$tel', '$rango')";
+        $almacenar= "INSERT INTO usuario( user_name, password, Nombre, Ape_pat, Ape_mat, telefono, Rango) VALUES ('$usuario', '$contraseña', '$nombre', '$apep', '$apem', '$tel', '$rango')";
         $almacena= "INSERT INTO direccion(calle, No_interior, No_exterior, colonia, C_P) VALUES ('$calle', '$noi', '$noe', '$col', '$cp')";
         $resultado= mysqli_query($conexion, $almacenar);
         $res= mysqli_query($conexion, $almacena);
+    
         if($resultado && $res)
         {
             header ("location: regisProduct.php?exito");
