@@ -62,7 +62,7 @@
                     </div>
 
                 </div>
-            
+             
                 <input type="submit" class="btn-large center deep-blue hoverable" id="actualizar" name="registrar" value="Registrar Producto">
             </div>
         

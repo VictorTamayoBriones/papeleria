@@ -34,13 +34,12 @@ if(isset($_POST['actualizar']))
         $resultado= mysqli_query($conexion, $modi);
         if($resultado)
         {
-            //header ("location: editarProduct.php?exito");
-            ?> <a href="editarProduct.php"><center><font color="RED">Datos modificados</font></center></a><?php
-        }
+            header ("location: editarProduct.php?exito");
+            }
         else
         {
-            //header ("location: editarProduct.php?Error");
-            ?> <a href="editarProduct.php" > <center><font color="RED">ERROR en la consulta</font></center></a><?php
+            header ("location: editarProduct.php?Error");
+            
         }
 
 
