@@ -24,13 +24,9 @@ $conexion2= mysqli_connect("localhost","user1","123","papeleria");
         {   
             $a=$_POST['nombre'];
             
-        $consulta= "SELECT codigo, nombre_articulo, categoria, stock, imagen FROM catalogo_p where categoria like '%$a%'";
+        $consulta= "SELECT codigo, nombre_articulo, categoria, stock, imagen FROM catalogo_p where categoria like '%$a%' or nombre_articulo like '%$a%'";
     $ejecutarconsulta= mysqli_query($conexion2,$consulta);
     $verfilas= mysqli_num_rows($ejecutarconsulta);
-    
-    echo("".$a);
-
-    echo("<br>".$verfilas);
     $fila= mysqli_fetch_array($ejecutarconsulta);
 
     if(!$ejecutarconsulta)

@@ -14,8 +14,10 @@ if(isset($_POST['actualizar']))
         $categoria= $_POST['categoria'];
         $stock= $_POST['stock'];
         $precio= $_POST['precio'];
-        $imagen= $_POST['imagen'];
-        $a="<img src=img/$imagen>";
+        $nombreImg=$_FILES['img']['name'];
+        $destino="img/".$nombreImg;
+        $a="<img src=../$destino>";
+        
         /*echo("nombre:".$nombre);
         echo("<br>codigo:".$codigo);
         echo("<br>categoria:".$categoria);

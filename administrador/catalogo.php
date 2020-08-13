@@ -8,11 +8,7 @@ $conn= mysqli_connect("localhost","user1","123","papeleria");
             
 
 <div class="container center verpro">
-<a href="buscar2.php">
-<form method="get" action="buscar2.php">
- <button class="btn-large center deep-blue hoverable" type="submit" id="return">BUSCAR</button>
-</form>
-</a>
+
 <br>
 </br>
 

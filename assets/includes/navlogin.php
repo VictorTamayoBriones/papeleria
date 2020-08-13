@@ -19,6 +19,7 @@
         <div class="barra">
 
             <a href="../index.php">Inicio</a>
+            <a href="buscar2.php"> BUSCAR </a>
             <!--
             <a href="./administrador/catalogo.php">Catalogo</a>
 
