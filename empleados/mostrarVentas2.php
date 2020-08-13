@@ -2,8 +2,8 @@
 <?php require_once "../conexion.php" ?>
 <?require_once "actions.php" ?>
 
-<?php if(isset($_SESSION['user_name'])): ?>
-<a href="../administrador/adindex.php">
+<?php if(isset($_SESSION['user_name_ep'])): ?>
+<a href="epindex.php">
 <button class="btn-large center deep-blue hoverable" id="return">Regresar</button>
 </a>
 
@@ -75,8 +75,7 @@
             <div class='card-action'>
             <button name='info' id='info' class='waves-effect waves-light btn' onclick='detalles($identi)'>Detalles</button>
             <button name='print' id='print' class='waves-effect waves-light btn' onclick='create($dato)'>PDF</button>
-            <button name='delete' id='borrar' class='waves-effect waves-light btn' onclick='borrar($dato)'>Borrar</button>
-
+            
           
             </div>
 
@@ -145,4 +144,4 @@
 <script src="ventas.js"></script>
 <script src="jquery.min.js"></script>
 <?php  endif; ?>
-<?php  if(!isset($_SESSION['user_name'])){ header("location: ../sessionError.php"); } ?>
+<?php  if(!isset($_SESSION['user_name_ep'])){ header("location: ../sessionError.php"); } ?>

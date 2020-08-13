@@ -14,7 +14,7 @@
       
                            <div class="container center" border-radius="55px" > 
                           
-                            <form action="EdicionDeProductos.php" method="POST" >
+                            <form action="EdicionDeProductos.php" method="POST" enctype="multipart/form-data" >
                             <div class="card-panel hoverable grey lighten-5">
                             <?php
                             $consulta="SELECT * FROM catalogo_p where codigo=$a1 or ID=$a1";
@@ -37,7 +37,7 @@
  <input className="container validate" type="text" name="stock" value="<?php echo $user['stock']?>" required minlength="1" maxlength="60" pattern="[0-9]+"/>
                        
 <h5>IMAGEN:</h5>                             <p> <font color="red">Campo obligatorio</font></p>
-<input className="container validate" type="text" name="imagen" placeholder="IMAGEN" required minlength="1" maxlength="60" >
+imagen<input type="file" name="img">
 
 <input  type="text" name="codigo1" value="CODIGO DEL ARTICULO: <?php echo $user['codigo']?>"disabled >
 

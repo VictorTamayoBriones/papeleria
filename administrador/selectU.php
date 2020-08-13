@@ -7,14 +7,14 @@ require_once "../conexion.php";
 <table class="striped center">
         <thead>
           <tr>
-              <th>ID</th>
+              <th>Matricula</th>
               <th>User_Name</th>
               <th>Nombre</th>
               <th>Apellido Paterno</th>
               <th>Apellido Materno</th>
               <th>Telefono</th>
               <th>Rango</th>
-              <th>Matricula</th>
+              
           </tr>
         </thead>
     <?php
@@ -23,7 +23,7 @@ require_once "../conexion.php";
         if(strlen($_POST['usuario']) >=1)
         {
             $user=$_POST['usuario'];
-        $consulta= "SELECT * FROM usuario where ID=$user";
+        $consulta= "SELECT ID, user_name, Nombre, Ape_pat, Ape_mat, telefono, Rango FROM usuario where ID=$user";
     $ejecutarconsulta= mysqli_query($conexion,$consulta);
     $verfilas= mysqli_num_rows($ejecutarconsulta);
     $fila= mysqli_fetch_array($ejecutarconsulta);
@@ -51,7 +51,7 @@ require_once "../conexion.php";
                             <td>'.$fila[4].'</td>
                             <td>'.$fila[5].'</td>
                             <td>'.$fila[6].'</td>
-                            <td>'.$fila[7].'</td>   
+                              
                             
                         </tr>';
                         $fila=mysqli_fetch_array($ejecutarconsulta);
