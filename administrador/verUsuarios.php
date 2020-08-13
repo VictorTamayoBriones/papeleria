@@ -1,4 +1,4 @@
-<?php require_once "../assets/includes/navlogin.php" ?>
+<?php require_once "../assets/includes/nav2.php" ?>
 
 <?php require_once "../conexion.php" ?>
 
@@ -80,7 +80,7 @@ require_once "../conexion.php";
 <br>
 </div>
 </div>
-<?php require_once "../assets/includes/footerlogin.php" ?>
+<?php require_once "../assets/includes/footer2.php" ?>
 
     <?php  endif; ?>
     <?php  if(!isset($_SESSION['user_name'])){ header("location: ../sessionError.php"); } ?>

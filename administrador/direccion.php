@@ -1,4 +1,4 @@
-<?php require_once "../assets/includes/navlogin.php" ?>
+<?php require_once "../assets/includes/nav2.php" ?>
 
 
 <div class="catalogo">
@@ -77,4 +77,4 @@ require_once "../conexion.php";
       
 </div>
 
-<?php require_once "../assets/includes/footerlogin.php" ?>
+<?php require_once "../assets/includes/footer2.php" ?>

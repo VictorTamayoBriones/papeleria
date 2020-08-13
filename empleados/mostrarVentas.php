@@ -1,4 +1,4 @@
-<?php require_once "../assets/includes/navlogin.php" ?>
+<?php require_once "../assets/includes/nav2.php" ?>
 <?php require_once "../conexion.php" ?>
 <?require_once "actions.php" ?>
 

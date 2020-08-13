@@ -1,6 +1,6 @@
 <?php
-/*$conexion2= mysqli_connect("localhost","catalogo","123","papeleria");*/
-require_once "../conexion.php";
+$conexion2= mysqli_connect("localhost","user1","123","papeleria");
+
 ?>
 
 </br>
@@ -21,13 +21,16 @@ require_once "../conexion.php";
     if(isset($_POST['buscar']))
     {
         if(strlen($_POST['nombre']) >=1)
-        {   $_POST['nombre']="";
-            $nombre=$_POST['nombre'];
+        {   
+            $a=$_POST['nombre'];
             
-        $consulta= "SELECT codigo, nombre_articulo, categoria, stock, imagen FROM catalogo_p where nombre_articulo like '%".$nombre."%'or categoria like '%".$nombre."%' ";
-    $ejecutarconsulta= mysqli_query($conexion,$consulta);
+        $consulta= "SELECT codigo, nombre_articulo, categoria, stock, imagen FROM catalogo_p where categoria like '%$a%'";
+    $ejecutarconsulta= mysqli_query($conexion2,$consulta);
     $verfilas= mysqli_num_rows($ejecutarconsulta);
-    echo("".$verfilas);
+    
+    echo("".$a);
+
+    echo("<br>".$verfilas);
     $fila= mysqli_fetch_array($ejecutarconsulta);
 
     if(!$ejecutarconsulta)

@@ -18,7 +18,7 @@
     <header>
         <div class="barra">
 
-            <a href="../index.php">Inicio</a>
+            <p><font color="white"><center>PAPELERIA TLAXCALTECA</center></font></p>
             <!--
             <a href="./administrador/catalogo.php">Catalogo</a>
 

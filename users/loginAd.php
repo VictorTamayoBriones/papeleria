@@ -1,4 +1,4 @@
-<?php require_once "../assets/includes/navlogin.php" ?>
+<?php require_once "../assets/includes/nav2.php" ?>
 <?php  if(isset($_SESSION['user_name'])): ?>
 <p>Fallo en el sistema, aunexiste una sesión iniciada</p>
 <?php endif; ?>
@@ -39,4 +39,4 @@
     <a href="../index.php">
 <button class="btn-large center deep-blue hoverable" id="return">Regresar</button>
 </a>
-<?php require_once "../assets/includes/footerlogin.php" ?>
+<?php require_once "../assets/includes/footer2.php" ?>
