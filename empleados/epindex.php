@@ -19,7 +19,7 @@
        
             <a href="rVentas.php" id="verde">Registrar ventas</a>
 
-            <a href="mostrarVentas.php" id="azul">Ver ventas</a>
+            <a href="../empleados/mostrarVentas2.php" id="azul">Ver ventas</a> 
         
         </div>
     </section>

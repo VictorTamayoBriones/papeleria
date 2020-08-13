@@ -26,7 +26,7 @@ require_once "../conexion.php";
 <table class="striped center">
         <thead>
           <tr>
-              <th>ID</th>
+              <th>Matricula</th>
               <th>USER_NAME</th>
               <th>Nombre</th>
               <th>Apellido Paterno</th>

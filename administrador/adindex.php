@@ -44,7 +44,7 @@
                 </summary>
                 <ul>
                     <li>
-                        <a href="userRegis.php" id="azul">Registrar Usuarios </a>
+                        <a href="userRegis.php" id="azul">Registrar Usuarios </a> 
                     </li>
 
                     <li>
@@ -55,7 +55,16 @@
                     </li>
                 </ul>
             </details>
-
+            <details>
+            <summary id="dePro">
+                    Ventas
+                </summary>
+                <ul>
+                    <li>
+                    <a href="../empleados/mostrarVentas.php" id="azul">Ver ventas</a> 
+                    </li>
+                </ul>
+            </details>
         </div>
 
 <!--
