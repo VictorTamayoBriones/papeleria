@@ -749,5 +749,5 @@ if(isset($_POST)){
     
 
 }
-header("location: rVentas?exito");
+header("location: rVentas.php?exito");
 ?>

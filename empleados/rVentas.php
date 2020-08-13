@@ -29,7 +29,9 @@
 </a>
 
 </br>
-     
+<?php if(isset($_GET['exito'])):?>
+  <br>  <div class="alertaExito"><p>Registro Exitoso</p></div>
+<?php endif; ?>    
 <div class="container center" border-radius="55px" id="contenedor">
     <form action="registroDeVentas.php"  method="POST" class="container" id="formulario">
             <div class="card-panel hoverable grey lighten-5" id="divPostForm">
