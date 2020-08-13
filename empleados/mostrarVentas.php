@@ -13,6 +13,9 @@
     $start= mysqli_query($conexion,$query);
     $rows= mysqli_num_rows($start);
     $mostrar= mysqli_fetch_array($start);
+    if($rows<=0){
+        echo"<h2>No hay ventas registradas</h2>"; die;
+    }
 
     
 
@@ -71,9 +74,10 @@
             </div>
             <div class='card-action'>
             <button name='info' id='info' class='waves-effect waves-light btn' onclick='detalles($identi)'>Detalles</button>
-            <form action='actions.php?delete=$dato' method='POST'>
-            <input type='submit' name='eliminar' id='delete' value='Eliminar' onclick='alert($alerta)' class='waves-effect waves-light btn'>
-            </form>
+            <button name='print' id='print' class='waves-effect waves-light btn' onclick='create($dato)'>PDF</button>
+            <button name='delete' id='borrar' class='waves-effect waves-light btn' onclick='borrar($dato)'>Borrar</button>
+
+          
             </div>
 
             <div class='card-panel teal' id='detalles'>

@@ -4,13 +4,15 @@
     $ejecutarconsulta= mysqli_query($conexion,$consulta); 
     $verid= mysqli_num_rows($ejecutarconsulta);
     $id= mysqli_fetch_array($ejecutarconsulta);
-
+    /*
     $sql="select count(idventa) from subventas where idventa = $id[0];";
     $startSql= mysqli_query($conexion,$sql);
     $show= mysqli_num_rows($startSql);
     $idC=mysqli_fetch_array($startSql);
+    var_dump($idC); die;
     $idCampo = 2 + $idC[0];
     //var_dump($idCampo); die;
+    */
 ?>
 <?php if(isset($_SESSION['user_name_ep'])): ?>
 <?php require_once "../assets/includes/navlogin.php" ?>

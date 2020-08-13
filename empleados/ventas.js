@@ -12,3 +12,11 @@ function detalles(identi){
 
     $(panels[identi]).slideToggle();
 }
+
+function create(dato){
+    window.location="./printPdf.php?"+"id="+dato;
+}
+
+function borrar(dato){
+    window.location="./actions.php?"+"delete="+dato;
+}

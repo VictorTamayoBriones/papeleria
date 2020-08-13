@@ -11,7 +11,7 @@
             <p id="dateu">Martes 27 de abril</p>
 
             <form action="../logout.php">
-            <input type="submit" value="Cerra sesión" class="logout">
+            <button class="btn waves-effect waves-light logoutS" type="submit" name="action">Cerrar sesion</button>
             </form>
         </div>
 
