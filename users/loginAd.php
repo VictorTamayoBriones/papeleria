@@ -25,7 +25,7 @@
 
                 <!--<input type="text" name="rango" id="usuario" placeholder="   Rango" required minlength="5" maxlength="30" pattern="[A-Za-z0-9]+" <?php if(isset($_GET['3rr0r'])):?> disabled <?php endif ?>>-->
 
-                <input type="password" name="pass" id="pass" placeholder="  ingresa tu contraseña" required minlength="6" maxlength="30" pattern="[0-9]+" <?php if(isset($_GET['3rr0r'])):?> disabled <?php endif ?>>
+                <input type="password" name="pass" id="pass" placeholder="  ingresa tu contraseña" required minlength="6" maxlength="30" pattern="[A-Za-z0-9]+" <?php if(isset($_GET['3rr0r'])):?> disabled <?php endif ?>>
                 
                 <input type="submit" name="ingreso" id="ingreso" <?php if(isset($_GET['error'])):?> value="Ingresar" <?php elseif(isset($_GET['falloDos'])):?> value="Ingresa"<?php endif ?> value="Entrar" <?php if(isset($_GET['3rr0r'])):?> disabled <?php endif ?>>
                     
@@ -35,8 +35,15 @@
                 
             </form>
         
+        
+        
     </div>
     <a href="../index.php">
 <button class="btn-large center deep-blue hoverable" id="return">Regresar</button>
 </a>
+
+<a href="../inf.php">
+<button class="btn-large center deep-blue hoverable" style="position: absolute; right: 0;">INFORMACIÓN</button>
+</a>
+
 <?php require_once "../assets/includes/footer2.php" ?>

@@ -50,8 +50,12 @@
                     <li>
                         <a href="verUsuarios.php" id="amarillo">Ver usuarios</a>
                     </li>
+                  
                     <li>
-                        <a href="eliminarusuario.php" id="verde"> Eliminar usuarios</a>
+                    <a href="contra.php" id="verde">Ver contraseñas</a> 
+                    </li>
+                    <li>
+                        <a href="eliminarusuario.php" id="rojo"> Eliminar usuarios</a>
                     </li>
                 </ul>
             </details>
@@ -65,6 +69,8 @@
                     </li>
                 </ul>
             </details>
+
+            
         </div>
 
 <!--
