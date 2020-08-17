@@ -6,6 +6,10 @@
 <button class="btn-large center deep-blue hoverable" id="return">Regresar</button>
 </a>
 </br>
+<?php if(isset($_GET['exito'])):?>
+  <br>  <div class="alertaExito"><p>Registro Exitoso</p></div>
+<?php endif; ?> 
+
 <div class="container center" border-radius="55px" >
     <form action="registroDeUsuarios.php"  method="POST" class="container">
             <div class="card-panel hoverable grey lighten-5">
@@ -100,6 +104,20 @@
                     <div class="card-panel hoverable  col s4">
                         <div className="input-field ">
                             <input className="container validate" type="number" placeholder="C_P" name="C_P" required minlength="3" maxlength="60" pattern="[0-9]+"/>
+                        </div>
+                    </div>
+
+                    <div class="card-panel hoverable  col s5">
+                        <div className="input-field ">
+                            <input className="container validate" type="password" placeholder="Dato para recuperar tu contraseña" name="r1" required minlength="6" maxlength="60" pattern="[a-zA-Z0-9]+"/>
+                        </div>
+                    </div>
+
+                    <div class="conatiner col s2"></div>
+
+                    <div class="card-panel hoverable  col s5">
+                        <div className="input-field ">
+                            <input className="container validate" type="password" placeholder="Ingresa el mismo dato " name="r2" required minlength="6" maxlength="60" pattern="[a-zA-Z0-9]+"/>
                         </div>
                     </div>
                     <div class="conatiner col s3"></div>

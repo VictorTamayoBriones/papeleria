@@ -23,7 +23,9 @@ require_once "../conexion.php";
         if(strlen($_POST['codigo']) >=1)
         {
             $codigo=$_POST['codigo'];
-        $consulta= "SELECT * FROM catalogo_p where codigo=$codigo";
+            $c="CREATE OR REPLACE VIEW vista1 as SELECT * FROM catalogo_p where codigo=$codigo";
+            $eje= mysqli_query($conexion,$c);
+        $consulta= "SELECT * FROM vista1";
     $ejecutarconsulta= mysqli_query($conexion,$consulta);
     $verfilas= mysqli_num_rows($ejecutarconsulta);
     $fila= mysqli_fetch_array($ejecutarconsulta);
