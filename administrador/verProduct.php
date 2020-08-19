@@ -62,8 +62,6 @@ require_once "../conexion.php";
                             <td>'.$fila[3].'</td>
                             <td>'.$fila[4].'</td>
                             <td>'.$fila[5].'</td>
-                            
-                            
                         </tr>';
                         
                         $fila=mysqli_fetch_array($ejecutarconsulta);

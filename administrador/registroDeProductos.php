@@ -17,9 +17,7 @@ if(isset($_POST)){
         $categoria= $_POST['categoria'];
         $stock= $_POST['stock'];
         $precio= $_POST['precio'];
-        $nombreImg=$_FILES['img']['name'];
-        $a="<img src=..>";
-        $almacenar= "INSERT INTO catalogo_p(codigo, nombre_articulo, categoria, stock, precio,imagen) VALUES ('$codigo', '$nombre', '$categoria', '$stock', '$precio','$a')";
+        $almacenar= "INSERT INTO catalogo_p(codigo, nombre_articulo, categoria, stock, precio) VALUES ('$codigo', '$nombre', '$categoria', '$stock', '$precio')";
         $resultado= mysqli_query($conexion, $almacenar);
         if($resultado)
         {
