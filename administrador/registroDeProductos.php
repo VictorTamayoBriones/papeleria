@@ -1,7 +1,7 @@
 <?php 
 
 require_once "../conexion.php";
-echo"nel";
+
 //Registrar Producto ----es ese
 /*
 var_dump($_POST);
@@ -9,7 +9,7 @@ die;
 */
 if(isset($_POST)){
     
- echo"si hay post";
+ echo"<h1>Conexion lenta de red, intente de nuevo<h1>";
     if(strlen($_POST['nombre']) >=1 && strlen($_POST['codigo']) >=1 && strlen($_POST['categoria']) >=1 && strlen($_POST['stock']) >=1 && strlen($_POST['precio'])>=1 )
     {
         $nombre= $_POST['nombre'];
