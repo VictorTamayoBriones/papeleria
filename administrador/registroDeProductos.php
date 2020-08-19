@@ -9,7 +9,7 @@ die;
 if(isset($_POST['registrar'])){
     
  
-    if(strlen($_POST['nombre']) >=1 && strlen($_POST['codigo']) >=1 && strlen($_POST['categoria']) >=1 && strlen($_POST['stock']) >=1 && strlen($_POST['precio'])>=1 )
+    if(!empty($_POST['nombre'])  && !empty($_POST['codigo'])  && !empty($_POST['categoria'])  && !empty($_POST['stock'])  && !empty($_POST['precio']) )
     {
         $nombre= $_POST['nombre'];
         $codigo= $_POST['codigo'];
