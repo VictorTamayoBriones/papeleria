@@ -55,11 +55,6 @@
                 
                     <div class="conatiner col s3"></div>
                 
-                    <div class="card-panel hoverable  col s5">
-                        <div className="input-field ">
-                        imagen<input type="file" name="img">
-                        </div>
-                    </div>
 
                 </div>
              
