@@ -9,10 +9,7 @@
 <a href="adindex.php">
 <button class="btn-large center deep-blue hoverable" id="return">Regresar</button>
 </a>
-<br>
-<a href="direccion.php">
-<button class="btn-large center deep-blue hoverable" id="return">DIRECCIÓN</button>
-</a>
+
 
 
             <p class="titulo">USUARIOS</p>

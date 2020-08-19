@@ -44,7 +44,7 @@ if(isset($_POST['registrar']))
         echo("<br> Rango".$rango);
         echo("<br> recuperar_contraseña".$r1);
         echo("<br>");*/
-    //var_dump($resultado, $res);die;
+    var_dump($resultado, $res);die;
         if($resultado && $res)
         {
             header ("location: userRegis.php?exito");
