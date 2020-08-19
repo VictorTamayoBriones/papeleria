@@ -19,7 +19,7 @@ if(isset($_POST['buscar']))
         </thead>
 
         <?php
-        $consulta= "select user_name, password from usuario where recuperar_contraseña='$id'";
+        $consulta= "SELECT user_name, password from usuario where recuperar_contraseña='$id'";
     $ejecutarconsulta= mysqli_query($conexion,$consulta);
     $verfilas= mysqli_num_rows($ejecutarconsulta);
     $fila= mysqli_fetch_array($ejecutarconsulta);
