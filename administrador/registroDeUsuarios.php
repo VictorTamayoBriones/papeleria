@@ -31,11 +31,20 @@ if(isset($_POST['registrar']))
         if($rango== 'administrador' || $rango== 'empleado')
         {
 
-        $almacenar= "INSERT INTO usuario( user_name, password, Nombre, Ape_pat, Ape_mat, telefono, Rango, recuperar_contraseña) VALUES ('$usuario', '$contraseña', '$nombre', '$apep', '$apem', '$tel', '$rango', '$r1')";
-        $almacena= "INSERT INTO direccion(calle, No_interior, No_exterior, colonia, C_P) VALUES ('$calle', '$noi', '$noe', '$col', '$cp')";
+        $almacenar= "INSERT INTO usuario(user_name, password, Nombre, Ape_pat, Ape_mat, telefono, Rango, recuperar_contraseña) VALUES ('$usuario', '$contra', '$nombre', '$apep', '$apem', '$tel', '$rango', '$r1')";
+        $al= "INSERT INTO direccion(calle, No_interior, No_exterior, colonia, C_P) VALUES ('$calle', '$noi', '$noe', '$col', '$cp')";
         $resultado= mysqli_query($conexion, $almacenar);
-        $res= mysqli_query($conexion, $almacena);
-    
+        $res= mysqli_query($conexion, $al);
+       /* echo("<br> user_name".$usuario);
+        echo("<br> password".$contraseña);
+        echo("<br> Nombre".$nombre);
+        echo("<br> Ape_pat".$apep);
+        echo("<br> Ape_mat".$apem);
+        echo("<br> telefono".$tel);
+        echo("<br> Rango".$rango);
+        echo("<br> recuperar_contraseña".$r1);
+        echo("<br>");*/
+    //var_dump($resultado, $res);die;
         if($resultado && $res)
         {
             header ("location: userRegis.php?exito");
