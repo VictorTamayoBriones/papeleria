@@ -19,6 +19,7 @@
 <?php
 require_once "../conexion.php";
 ?>
+<div class="col s12">
 
 <table class="striped center">
         <thead>
@@ -76,6 +77,8 @@ require_once "../conexion.php";
 <br>
 
 </table>
+
+</div>
 
 </div>
 </div>
