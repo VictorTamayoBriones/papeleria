@@ -37,8 +37,6 @@
 <h5>STOCK DEL ARTICULO:</h5>                <p> <font color="red">Campo numerico obligatorio</font></p>
  <input className="container validate" type="text" name="stock" value="<?php echo $user['stock']?>" required minlength="1" maxlength="60" pattern="[0-9]+"/>
                        
-<h5>IMAGEN:</h5>                             <p> <font color="red">Campo obligatorio</font></p>
-imagen<input type="file" name="img">
 
 <input  type="text" name="codigo1" value="CODIGO DEL ARTICULO: <?php echo $user['codigo']?>"disabled >
 
@@ -57,4 +55,3 @@ imagen<input type="file" name="img">
 <?php endif; ?>
 
 <?php  if(!isset($_SESSION['user_name'])){ header("location: ../sessionError.php"); } ?>
-    
