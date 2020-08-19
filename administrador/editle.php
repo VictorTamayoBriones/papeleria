@@ -12,15 +12,16 @@
         $a1=$_POST['ID2'];
     ?>
       
-                           <div class="container center" border-radius="55px" > 
-                          
-                            <form action="EdicionDeProductos.php" method="POST" enctype="multipart/form-data" >
-                            <div class="card-panel hoverable grey lighten-5">
-                            <?php
-                            $consulta="SELECT * FROM catalogo_p where codigo=$a1 or ID=$a1";
-                            $ejecutarconsulta= mysqli_query($conexion,$consulta);
-                             $user = mysqli_fetch_assoc($ejecutarconsulta);
-                           ?>
+<div class="container center" border-radius="55px" > 
+
+ <form action="EdicionDeProductos.php" method="POST" enctype="multipart/form-data" >
+ <div class="card-panel hoverable grey lighten-5">
+    <?php
+        $consulta="SELECT * FROM catalogo_p where codigo=$a1 or ID=$a1";
+        $ejecutarconsulta= mysqli_query($conexion,$consulta);
+        $user = mysqli_fetch_assoc($ejecutarconsulta);
+    ?>
+
 <h5>NOMBRE DEL ARTICULO:</h5>
 <input className="container validate" type="text" name="nombre" value="<?php echo $user['nombre_articulo']?>" required minlength="1" maxlength="60" >
                             
