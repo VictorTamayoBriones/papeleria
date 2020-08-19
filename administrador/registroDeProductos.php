@@ -26,9 +26,9 @@ if(isset($_POST['registrar'])){
             header ("location: regisProduct.php?exito");
         }
         else{
-            ?>
             
-            <?php
+                header ("location: regisProduct.php?error");
+            
         }
 
     }
