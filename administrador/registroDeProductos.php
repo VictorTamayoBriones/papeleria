@@ -1,6 +1,7 @@
 <?php 
 
 require_once "../conexion.php";
+echo"nel";
 //Registrar Producto ----es ese
 /*
 var_dump($_POST);
