@@ -9,7 +9,7 @@ die;
 if(isset($_POST['registrar'])){
     
  
-    if($_POST['nombre'] >=1 && $_POST['codigo'] >=1 && $_POST['categoria'] >=1 && $_POST['stock'] >=1 && $_POST['precio']>=1 )
+    if(strlen($_POST['nombre']) >=1 && strlen($_POST['codigo']) >=1 && strlen($_POST['categoria']) >=1 && strlen($_POST['stock']) >=1 && strlen($_POST['precio'])>=1 )
     {
         $nombre= $_POST['nombre'];
         $codigo= $_POST['codigo'];
@@ -26,7 +26,9 @@ if(isset($_POST['registrar'])){
             header ("location: regisProduct.php?exito");
         }
         else{
-            header ("location: regisProduct.php?error");
+            ?>
+            
+            <?php
         }
 
     }
