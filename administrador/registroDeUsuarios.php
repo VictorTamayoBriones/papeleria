@@ -32,7 +32,7 @@ if(isset($_POST['registrar']))
         {
 
         $almacenar= "INSERT INTO usuario( user_name, password, Nombre, Ape_pat, Ape_mat, telefono, Rango, recuperar_contraseña) VALUES ('$usuario', '$contraseña', '$nombre', '$apep', '$apem', '$tel', '$rango', '$r1')";
-        $almacena= "CALL insert_direccion ('$calle', '$noi', '$noe', '$col', '$cp')";
+        $almacena= "INSERT INTO direccion(calle, No_interior, No_exterior, colonia, C_P) VALUES ('$calle', '$noi', '$noe', '$col', '$cp')";
         $resultado= mysqli_query($conexion, $almacenar);
         $res= mysqli_query($conexion, $almacena);
     

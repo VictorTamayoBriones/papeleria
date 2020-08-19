@@ -10,7 +10,7 @@
 <br>
 
 <form  method="post">
-<input type="text" name="nombre" maxlength="50" size="80" placeholder="......."> 
+<input type="text" name="nombre" maxlength="50" size="80" placeholder="Nombre del producto"> 
  <button input type="submit" name="buscar" id="buscardos"> BUSCAR </button>
 
 </form>
