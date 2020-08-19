@@ -12,6 +12,7 @@
 
 ?>
 <form  method="post">
+<p>Para buscar o eliminar un producto llene el siguiente campo:</p>
 <input type="number" name="codigo" maxlength="50" size="80" placeholder="INGRESA EL CODIGO DEL PRODUCTO"> 
  <button input type="submit" name="buscar" id="buscardos"> BUSCAR </button>
  <button input type="submit" name="eliminar" id="eliminar" onclick="return ConfirmDelete()"> ELIMINAR </button>
@@ -22,7 +23,7 @@
 <script>
 function ConfirmDelete()
 {
-    var $respuesta = confirm("<h2>Estas seguro de que deseas eliminar este producto</h2>");
+    var $respuesta = confirm("Estas seguro de que deseas eliminar este producto");
 
     if ($respuesta == true)
     {

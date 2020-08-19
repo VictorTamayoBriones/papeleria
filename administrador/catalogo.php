@@ -1,6 +1,6 @@
 <?php require_once "../assets/includes/navlogin.php" ?>
 <?php
-$conn= mysqli_connect("localhost","user1","123","papeleria");
+ require_once "../conexion.php"  
 ?>
 
             <p class="titulo">Catalogo de productos</p>
@@ -27,7 +27,7 @@ $conn= mysqli_connect("localhost","user1","123","papeleria");
     <?php
         
      $consulta= "SELECT codigo, nombre_articulo, categoria, stock, imagen FROM catalogo_p";
-    $ejecutarconsulta= mysqli_query($conn,$consulta);
+    $ejecutarconsulta= mysqli_query($conexion,$consulta);
     $verfilas= mysqli_num_rows($ejecutarconsulta);
     $fila= mysqli_fetch_array($ejecutarconsulta);
 

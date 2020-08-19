@@ -5,7 +5,7 @@
 
 </br>
 <div class="catalogo">
-<form method="get" action="verUsuarios.php">
+<form method="get" action="adindex.php">
  <button class="btn-large center deep-blue hoverable" type="submit" id="return">Regresar</button>
 </form>
 </a>
@@ -13,6 +13,7 @@
 
 ?>
 <form  method="post">
+<p>Para buscar o eliminar un usuario llene el siguiente campo:</p>
 <input type="number" name="usuario" maxlength="50" size="80" placeholder="MATRICULA"> 
  <button input type="submit" name="buscar" id="buscardos"> BUSCAR </button>
  <button input type="submit" name="eliminar" id="eliminar" onclick="return ConfirmDelete()"> ELIMINAR </button>
@@ -23,7 +24,7 @@
 <script>
 function ConfirmDelete()
 {
-    var $respuesta = confirm("Estas seguro de que deseas eliminar este producto");
+    var $respuesta = confirm("Estas seguro de que deseas eliminar este usuario");
 
     if ($respuesta == true)
     {

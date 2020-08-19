@@ -35,9 +35,8 @@ require_once "../conexion.php";
         if(strlen($_POST['id']) >=1)
         {
             $matricula=$_POST['id'];
-            $c="CREATE OR REPLACE VIEW vista2 as SELECT direccion.IDempleado, usuario.user_name, direccion.calle, direccion.No_interior, direccion.No_exterior, direccion.colonia, direccion.C_P from direccion inner join usuario on direccion.IDempleado = usuario.ID where IDempleado=$matricula ";
-            $eje= mysqli_query($conexion,$c);
-        $consulta= "SELECT * FROM vista2";
+        
+        $consulta= "SELECT direccion.IDempleado, usuario.user_name, direccion.calle, direccion.No_interior, direccion.No_exterior, direccion.colonia, direccion.C_P from direccion inner join usuario on direccion.IDempleado = usuario.ID where IDempleado=$matricula ";
     $ejecutarconsulta= mysqli_query($conexion,$consulta);
     $verfilas= mysqli_num_rows($ejecutarconsulta);
     $fila= mysqli_fetch_array($ejecutarconsulta);
