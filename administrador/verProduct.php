@@ -61,8 +61,7 @@ require_once "../conexion.php";
                             <td>'.$fila[2].'</td>
                             <td>'.$fila[3].'</td>
                             <td>'.$fila[4].'</td>
-                           
-                            
+
                             
                         </tr>';
                         
