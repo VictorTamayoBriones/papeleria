@@ -19,7 +19,7 @@
                     <h3>Registrar</h3>   
                     <div class="card-panel hoverable  col s12">
                         <div className="input-field ">
-                            <input className="container validate" type="text" placeholder="Nombre" name="nombre" required minlength="3" maxlength="60" pattern="[a-zA-Z0-9]+"/>
+                            <input className="container validate" type="text" placeholder="Nombre" name="nombre" required minlength="3" maxlength="60"/>
                         </div>
                     </div>
 

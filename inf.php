@@ -6,7 +6,7 @@
 <br><br><br>
 <?php
 
- $conexion= mysqli_connect("localhost","root","","papeleria");
+$conexion= mysqli_connect("localhost","root","","papeleria");
 $consulta="SELECT DEFINICION()";
 $resultado=mysqli_query($conexion, $consulta);
 $fila= mysqli_fetch_array($resultado);
