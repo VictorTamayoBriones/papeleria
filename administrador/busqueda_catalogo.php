@@ -14,7 +14,7 @@
               <th>Categoría</th>
               <th>Stock</th>
               
-              <th>Imagen</th>
+              
           </tr>
         </thead>
     <?php
@@ -49,7 +49,7 @@
                             <td>'.$fila[1].'</td>
                             <td>'.$fila[2].'</td>
                             <td>'.$fila[3].'</td>
-                            <td>'.$fila[4].'</td>
+                            
                             
                             
                         </tr>';
