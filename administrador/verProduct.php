@@ -30,7 +30,7 @@ require_once "../conexion.php";
               <th>Categoría</th>
               <th>Stock</th>
               <th>Precio</th>
-              <th>Imagen</th>
+              
           </tr>
         </thead>
         
@@ -62,7 +62,7 @@ require_once "../conexion.php";
                             <td>'.$fila[3].'</td>
                             <td>'.$fila[4].'</td>
                             <td>'.$fila[5].'</td>
-                            <td>'.$fila[6].'</td>
+                            
                             
                         </tr>';
                         
