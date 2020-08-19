@@ -42,8 +42,6 @@
 <button class="btn-large center deep-blue hoverable" id="return">Regresar</button>
 </a>
 
-<a href="../inf.php">
-<button class="btn-large center deep-blue hoverable" style="position: absolute; right: 0;">INFORMACIÓN</button>
-</a>
+
 
 <?php require_once "../assets/includes/footer2.php" ?>
