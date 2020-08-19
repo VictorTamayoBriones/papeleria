@@ -14,7 +14,7 @@ require_once "../conexion.php";
               <th>Categoría</th>
               <th>Stock</th>
               <th>Precio</th>
-              <th>Imagen</th>
+             
           </tr>
         </thead>
     <?php
@@ -24,7 +24,7 @@ require_once "../conexion.php";
         {
             $codigo=$_POST['codigo'];
             
-        $consulta= " SELECT * FROM catalogo_p where codigo=$codigo";
+        $consulta= " SELECT ID, codigo, nombre_articulo, categoria, stock, precio FROM catalogo_p where codigo=$codigo";
     $ejecutarconsulta= mysqli_query($conexion,$consulta);
     $verfilas= mysqli_num_rows($ejecutarconsulta);
     $fila= mysqli_fetch_array($ejecutarconsulta);
@@ -51,7 +51,7 @@ require_once "../conexion.php";
                             <td>'.$fila[3].'</td>
                             <td>'.$fila[4].'</td>
                             <td>'.$fila[5].'</td>
-                            <td>'.$fila[6].'</td>
+                           
                             
                         </tr>';
                         $fila=mysqli_fetch_array($ejecutarconsulta);
