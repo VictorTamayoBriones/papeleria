@@ -34,7 +34,7 @@ require_once "../conexion.php";
         </thead>
         
     <?php
-        $consulta= "SELECT * FROM catalogo_p";
+    $consulta= "SELECT * FROM catalogo_p";
     $ejecutarconsulta= mysqli_query($conexion,$consulta);
     $verfilas= mysqli_num_rows($ejecutarconsulta);
     $fila= mysqli_fetch_array($ejecutarconsulta);
