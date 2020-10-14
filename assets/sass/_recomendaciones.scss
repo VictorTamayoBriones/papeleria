@@ -1,0 +1,53 @@
+#recomendaciones{
+    background: #ccc;
+    width: 100%;
+    margin-top: 30px;
+    .container{
+        width: 80%;
+        margin: auto;
+        .recomendaciones{
+            width: 100%;
+            .texto{
+                .titulo{
+                    color: $azul;
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: bold; 
+                    padding: 20px;
+                }
+                .info{
+                    color: #313131;
+                    text-align: center;
+                    font-size: 22px;
+                }
+            }
+            .tarjetas{
+                width: 70%;
+                display: flex;
+                flex-wrap: wrap;
+                margin: auto;
+                .tarjeta{
+                    width: 30%;
+                    background: $gris;
+                    border-radius: 20px;
+                    overflow: hidden;
+                    margin: auto;
+                    margin-right: 20px;
+                    margin-top:25px;
+                    margin-bottom: 25px;
+                    .container{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                        }
+                        p{
+                            color:#fff;
+                            text-align: center;
+                            padding:8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

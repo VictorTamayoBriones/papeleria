@@ -1,0 +1,39 @@
+#sobreNosotros{
+    width: 100%;
+    .container{
+        width: 80%;
+        margin: auto;
+        .sobreNosotros{
+            width: 100%;
+            .informacion{
+                .titulo{
+                    color: $azul;
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: bold;
+                }
+                .texto{
+                    columns: #111111;
+                    text-align: center;
+                    margin-top: 50px;
+                    font-size: 20px;
+                }
+            }
+            .foto{
+                width: 40%;
+                margin:auto;
+                img{
+                    width: 100%;
+                }
+            }
+            .mision{
+                p{
+                    text-align: center;
+                    font-weight: lighter;
+                    color: #4e4e4e;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}

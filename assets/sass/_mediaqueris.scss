@@ -1,0 +1,61 @@
+@media screen and (max-width: 800px){
+    #recomendaciones{
+        .container{
+            .recomendaciones{
+                .tarjetas{
+                    width: 100%;
+                    .tarjeta{
+                        width: 25%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    header{
+        .container{
+            .principal{
+                .btnSobre{
+                    a{
+                        padding: 5px 15px;
+                        bottom: 50px;
+                    }
+                }
+            }
+        }
+    }
+    #recomendaciones{
+        .container{
+            .recomendaciones{
+                .tarjetas{
+                    .tarjeta{
+                        .container{
+                            p{
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 460px){
+    header{
+        .container{
+            nav{
+                ul{
+                    li{
+                        padding: 5px 8px;
+                        a{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

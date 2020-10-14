@@ -1,0 +1,47 @@
+header{
+    width: 100%;
+    .container{
+        width: 100%;
+        .menuToggle{
+            opacity: 0;
+            visibility: hidden;
+        }
+        nav{
+            width: 100%;
+            background: $gris;
+            padding: 10px;
+            ul{
+                display: flex;
+                li{
+                    padding: 8px 20px;
+                    list-style: none;
+                    a{
+                        color:#fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .principal{
+            width: 100%;
+            .foto{
+                width: 100%;
+                img{
+                    max-width: 100%;
+                }
+            }
+            .btnSobre{
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                    padding: 10px 15px;
+                    border: 1px solid #fff;
+                    border-radius: 20px;
+                    position: relative;
+                    bottom: 75px;
+                    margin-left: 75%;
+                }
+            }
+        }
+    }
+}

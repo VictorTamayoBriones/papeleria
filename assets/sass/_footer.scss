@@ -1,0 +1,23 @@
+footer{
+    background: #000;
+    width: 100%;
+    margin-top:30px;
+    .container{
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+        .pie{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            line-height: 25px;
+            p{
+                color: #fff;
+            }
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
