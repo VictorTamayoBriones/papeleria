@@ -8,8 +8,7 @@
   clear: both; }
 
 body {
-  background: #fff; 
-  width:100%;}
+  background: #fff; }
 
 header {
   width: 100%; }
@@ -177,6 +176,44 @@ footer {
       footer .container .pie a {
         color: #fff;
         text-decoration: none; }
+
+.login {
+  width: 100%; }
+  .login .container {
+    width: 30%;
+    margin: auto; }
+    .login .container .formulario {
+      background: linear-gradient(135deg, #d41e31, #491f8f);
+      padding: 20px;
+      margin-top: 10%;
+      border-radius: 20px; }
+      .login .container .formulario h2 {
+        text-align: center;
+        color: #fff;
+        font-size: 32px;
+        margin-bottom: 20px; }
+      .login .container .formulario .datos {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: auto; }
+        .login .container .formulario .datos input {
+          margin: 15px;
+          padding: 8px;
+          font-size: 20px;
+          border-radius: 8px;
+          border: none; }
+          .login .container .formulario .datos input:focus {
+            outline: none; }
+        .login .container .formulario .datos input[type=submit] {
+          background: #1a5eb8;
+          color: #fff;
+          width: 50%;
+          margin: auto;
+          margin-top: 15px;
+          margin-bottom: 15px; }
+          .login .container .formulario .datos input[type=submit]:active {
+            background: #0055c4; }
 
 @media screen and (max-width: 800px) {
   #recomendaciones .container .recomendaciones .tarjetas {
