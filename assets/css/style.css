@@ -314,8 +314,10 @@ footer {
       font-size: 18px; } }
 @media screen and (max-width: 600px) {
   header .container .principal .btnSobre a {
+    margin-left: 65%;
     padding: 5px 15px;
-    bottom: 50px; }
+    bottom: 50px;
+    font-size: 15px; }
 
   #recomendaciones .container .recomendaciones .tarjetas .tarjeta .container p {
     font-size: 10px; }
@@ -347,5 +349,11 @@ footer {
     padding: 0px; }
     #homeUser .container .opciones details ul li a {
       font-size: 12px; } }
+@media screen and (max-width: 380px) {
+  header .container .principal .btnSobre a {
+    margin-left: 65%;
+    padding: 5px 15px;
+    font-size: 12px;
+    bottom: 50px; } }
 
 /*# sourceMappingURL=style.css.map */

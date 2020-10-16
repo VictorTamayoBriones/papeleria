@@ -54,8 +54,10 @@
             .principal{
                 .btnSobre{
                     a{
+                        margin-left: 65%;
                         padding: 5px 15px;
                         bottom: 50px;
+                        font-size: 15px;   
                     }
                 }
             }
@@ -125,8 +127,9 @@
                     }
                 }
             }
-        }
+        }    
     }
+    
     #homeUser{
         .container{
             .cardPerfil{
@@ -150,5 +153,13 @@
                 }
             }
         }
+    }
+}
+@media screen and (max-width: 380px){
+    header .container .principal .btnSobre a {
+        margin-left: 65%;
+        padding: 5px 15px;
+        font-size: 12px;
+        bottom: 50px;
     }
 }
