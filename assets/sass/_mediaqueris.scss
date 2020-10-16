@@ -11,6 +11,41 @@
             }
         }
     }
+
+    .login{
+        width: 100%;
+        .container{
+            width: 70%;
+ 
+            
+        }
+    }
+
+    #homeUser{
+        .container{
+            .cardPerfil{
+                width: 50%;
+            }
+    
+            .opciones{
+                details{
+                    summary{
+                        font-size: 18px;
+                        padding:5px 18px;
+                    }
+                    ul{
+                        li{
+                            padding: 0px;
+                            a{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }
 
 @media screen and (max-width: 600px){
@@ -41,6 +76,40 @@
             }
         }
     }
+
+    .login{
+        .container{
+            .formulario{
+                .datos{
+                    width: 90%;
+                }
+            }
+        }
+    }
+    #homeUser{
+        .container{
+            .cardPerfil{
+                width: 70%;
+            }
+    
+            .opciones{
+                details{
+                    summary{
+                        font-size: 15px;
+                        padding:5px 15px;
+                    }
+                    ul{
+                        li{
+                            padding: 0px;
+                            a{
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 460px){
@@ -52,6 +121,30 @@
                         padding: 5px 8px;
                         a{
                             font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #homeUser{
+        .container{
+            .cardPerfil{
+                width: 80%;
+            }
+    
+            .opciones{
+                details{
+                    summary{
+                        font-size: 12px;
+                        padding:5px 12px;
+                    }
+                    ul{
+                        li{
+                            padding: 0px;
+                            a{
+                                font-size: 12px;
+                            }
                         }
                     }
                 }

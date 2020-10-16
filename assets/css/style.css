@@ -215,22 +215,137 @@ footer {
           .login .container .formulario .datos input[type=submit]:active {
             background: #0055c4; }
 
+#homeUser {
+  width: 100%; }
+  #homeUser .container {
+    width: 90%; }
+    #homeUser .container .cardPerfil {
+      width: 22%;
+      background: #aaaaaa;
+      padding: 15px;
+      margin-left: 50px;
+      border-radius: 0px 0px 15px 15px;
+      position: relative;
+      float: left; }
+      #homeUser .container .cardPerfil .foto {
+        width: 70%;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px; }
+        #homeUser .container .cardPerfil .foto img {
+          width: 100%; }
+      #homeUser .container .cardPerfil .texto {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 22px;
+        color: #fff; }
+      #homeUser .container .cardPerfil .formulario {
+        width: 90%;
+        margin: auto; }
+        #homeUser .container .cardPerfil .formulario button {
+          width: 100%;
+          margin: auto;
+          background: #0f6db9;
+          color: #fff;
+          border: none;
+          border-radius: 8px;
+          padding: 3px;
+          font-size: 20px; }
+          #homeUser .container .cardPerfil .formulario button:focus {
+            outline: none; }
+          #homeUser .container .cardPerfil .formulario button:hover {
+            background: #004696; }
+    #homeUser .container .opciones {
+      display: flex;
+      position: relative;
+      float: right; }
+      #homeUser .container .opciones details {
+        margin: 15px; }
+        #homeUser .container .opciones details summary {
+          color: #fff;
+          background: #0f6db9;
+          font-size: 22px;
+          padding: 5px 25px;
+          border-radius: 15px; }
+          #homeUser .container .opciones details summary:focus {
+            outline: none; }
+          #homeUser .container .opciones details summary:hover {
+            background: #004696; }
+          #homeUser .container .opciones details summary:active {
+            border-radius: 15px 15px 0px 0px; }
+        #homeUser .container .opciones details ul {
+          background: #ccc;
+          padding: 5px;
+          border-radius: 0px 0px 15px 15px; }
+          #homeUser .container .opciones details ul li {
+            width: 100%;
+            padding: 10px;
+            list-style: none;
+            margin-bottom: 15px; }
+            #homeUser .container .opciones details ul li a {
+              color: #000000;
+              font-size: 20px;
+              text-decoration: none; }
+              #homeUser .container .opciones details ul li a:hover {
+                color: #004696; }
+
 @media screen and (max-width: 800px) {
   #recomendaciones .container .recomendaciones .tarjetas {
     width: 100%; }
     #recomendaciones .container .recomendaciones .tarjetas .tarjeta {
-      width: 25%; } }
+      width: 25%; }
+
+  .login {
+    width: 100%; }
+    .login .container {
+      width: 70%; }
+
+  #homeUser .container .cardPerfil {
+    width: 50%; }
+  #homeUser .container .opciones details summary {
+    font-size: 18px;
+    padding: 5px 18px; }
+  #homeUser .container .opciones details ul li {
+    padding: 0px; }
+    #homeUser .container .opciones details ul li a {
+      font-size: 18px; } }
 @media screen and (max-width: 600px) {
   header .container .principal .btnSobre a {
     padding: 5px 15px;
     bottom: 50px; }
 
   #recomendaciones .container .recomendaciones .tarjetas .tarjeta .container p {
-    font-size: 10px; } }
+    font-size: 10px; }
+
+  .login .container .formulario .datos {
+    width: 90%; }
+
+  #homeUser .container .cardPerfil {
+    width: 70%; }
+  #homeUser .container .opciones details summary {
+    font-size: 15px;
+    padding: 5px 15px; }
+  #homeUser .container .opciones details ul li {
+    padding: 0px; }
+    #homeUser .container .opciones details ul li a {
+      font-size: 15px; } }
 @media screen and (max-width: 460px) {
   header .container nav ul li {
     padding: 5px 8px; }
     header .container nav ul li a {
-      font-size: 15px; } }
+      font-size: 15px; }
+
+  #homeUser .container .cardPerfil {
+    width: 80%; }
+  #homeUser .container .opciones details summary {
+    font-size: 12px;
+    padding: 5px 12px; }
+  #homeUser .container .opciones details ul li {
+    padding: 0px; }
+    #homeUser .container .opciones details ul li a {
+      font-size: 12px; } }
 
 /*# sourceMappingURL=style.css.map */

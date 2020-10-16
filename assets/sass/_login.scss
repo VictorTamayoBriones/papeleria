@@ -1,0 +1,46 @@
+.login{
+    width: 100%;
+    .container{
+        width: 30%;
+        margin: auto;
+        .formulario{
+            background: linear-gradient(135deg,#d41e31,#491f8f);
+            padding:20px;
+            margin-top: 10%;
+            border-radius: 20px;
+            h2{
+                text-align: center;
+                color:#fff;
+                font-size: 32px;
+                margin-bottom:20px;
+            }
+            .datos{
+                display:flex;
+                flex-direction: column;
+                width: 70%;
+                margin:auto;
+                input{
+                    margin: 15px;
+                    padding:8px;
+                    font-size: 20px;
+                    border-radius:8px;
+                    border:none;
+                    &:focus{
+                        outline: none;
+                    }
+                }
+                input[type=submit]{
+                    background: #1a5eb8;
+                    color:#fff;
+                    width:50%;
+                    margin:auto;
+                    margin-top: 15px;
+                    margin-bottom: 15px;
+                    &:active{
+                        background: #0055c4;
+                    }
+                }
+            }
+        }
+    }
+}
