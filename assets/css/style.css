@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -9,6 +10,11 @@
 
 body {
   background: #fff; }
+
+.ocultar {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute; }
 
 header {
   width: 100%; }
@@ -211,7 +217,8 @@ footer {
           width: 50%;
           margin: auto;
           margin-top: 15px;
-          margin-bottom: 15px; }
+          margin-bottom: 15px;
+          cursor: pointer; }
           .login .container .formulario .datos input[type=submit]:active {
             background: #0055c4; }
 
@@ -261,7 +268,8 @@ footer {
     #homeUser .container .opciones {
       display: flex;
       position: relative;
-      float: right; }
+      float: right;
+      right: 200px; }
       #homeUser .container .opciones details {
         margin: 15px; }
         #homeUser .container .opciones details summary {
@@ -274,7 +282,7 @@ footer {
             outline: none; }
           #homeUser .container .opciones details summary:hover {
             background: #004696; }
-          #homeUser .container .opciones details summary:active {
+          #homeUser .container .opciones details summary:open {
             border-radius: 15px 15px 0px 0px; }
         #homeUser .container .opciones details ul {
           background: #ccc;
@@ -292,6 +300,292 @@ footer {
               #homeUser .container .opciones details ul li a:hover {
                 color: #004696; }
 
+.register {
+  width: 100%; }
+  .register .container {
+    width: 80%;
+    margin: auto; }
+    .register .container h3 {
+      text-align: center; }
+    .register .container .detalles {
+      width: 70%;
+      margin: auto;
+      margin-top: 22px;
+      margin-bottom: -40px;
+      background: #f59403;
+      padding: 12px;
+      border-radius: 8px; }
+      .register .container .detalles .texto {
+        width: 100%;
+        margin: auto; }
+        .register .container .detalles .texto p {
+          color: #fff;
+          text-align: center; }
+    .register .container form {
+      width: 70%;
+      margin: auto;
+      margin-top: 75px;
+      background: #ccc;
+      border-radius: 12px;
+      overflow: hidden; }
+      .register .container form .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center; }
+        .register .container form .container .titulo {
+          background: #0f6db9;
+          width: 100%;
+          text-align: center;
+          color: #fff;
+          padding: 5px; }
+        .register .container form .container .datos {
+          width: 90%;
+          margin: auto;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          padding: 20px; }
+          .register .container form .container .datos input[type="text"], .register .container form .container .datos input[type="number"], .register .container form .container .datos input[type="file"], .register .container form .container .datos input[type="email"], .register .container form .container .datos input[type="password"], .register .container form .container .datos label, .register .container form .container .datos select {
+            width: 40%;
+            margin: auto;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            border: none; }
+            .register .container form .container .datos input[type="text"]:focus, .register .container form .container .datos input[type="number"]:focus, .register .container form .container .datos input[type="file"]:focus, .register .container form .container .datos input[type="email"]:focus, .register .container form .container .datos input[type="password"]:focus, .register .container form .container .datos label:focus, .register .container form .container .datos select:focus {
+              outline: none; }
+          .register .container form .container .datos input[type="submit"] {
+            width: 70%;
+            margin: auto;
+            padding: 5px;
+            background: #0f6db9;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer; }
+            .register .container form .container .datos input[type="submit"]:focus {
+              outline: none; }
+            .register .container form .container .datos input[type="submit"]:hover {
+              background: #004696; }
+          .register .container form .container .datos .añadir {
+            width: 70%;
+            margin: auto;
+            margin-bottom: 10px;
+            margin-top: 15px;
+            padding: 5px;
+            background: #033f3a;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer; }
+            .register .container form .container .datos .añadir:focus {
+              outline: none; }
+            .register .container form .container .datos .añadir:hover {
+              background: #07665e; }
+
+.return {
+  padding: 10px;
+  width: 100px;
+  background: #0f6db9;
+  border-radius: 0px 8px 8px 0px;
+  margin-top: 20px; }
+  .return a {
+    color: #fff;
+    text-decoration: none; }
+  .return:hover {
+    background: #004696; }
+
+.objectView {
+  width: 100%; }
+  .objectView .container {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px; }
+    .objectView .container .search {
+      width: 100%; }
+      .objectView .container .search input[type="text"] {
+        font-size: 18px;
+        padding: 5px 12px;
+        border: 1px solid #ccc;
+        border-radius: 20px 0px 0px 20px;
+        margin-bottom: 10px; }
+        .objectView .container .search input[type="text"]:focus {
+          outline: none; }
+      .objectView .container .search input[type="submit"] {
+        background: #0f6db9;
+        color: #fff;
+        font-size: 18px;
+        padding: 5px 12px;
+        border: 1px solid #ccc;
+        border-radius: 0px 20px 20px 0px;
+        cursor: pointer; }
+    .objectView .container .tabla {
+      width: 90%;
+      text-align: center; }
+      .objectView .container .tabla thead {
+        width: 100%;
+        background: #000;
+        color: #fff; }
+        .objectView .container .tabla thead th {
+          padding: 8px; }
+      .objectView .container .tabla tbody td {
+        background: #ccc; }
+        .objectView .container .tabla tbody td img {
+          max-width: 100px;
+          max-height: 100px;
+          margin: auto;
+          margin-top: 5px;
+          margin-bottom: 5px; }
+        .objectView .container .tabla tbody td .btn {
+          padding: 5px 15px;
+          border: none;
+          margin: 5px;
+          border-radius: 5px;
+          font-size: 15px;
+          cursor: pointer; }
+        .objectView .container .tabla tbody td .delete {
+          background: #e00202;
+          color: #fff; }
+          .objectView .container .tabla tbody td .delete:hover {
+            background: #cf0000; }
+          .objectView .container .tabla tbody td .delete:focus {
+            outline: none; }
+        .objectView .container .tabla tbody td .update {
+          background: #f59403;
+          color: #fff; }
+          .objectView .container .tabla tbody td .update:hover {
+            background: #f16d01; }
+          .objectView .container .tabla tbody td .update:focus {
+            outline: none; }
+        .objectView .container .tabla tbody td .view {
+          background: #37c400;
+          color: #fff; }
+          .objectView .container .tabla tbody td .view:hover {
+            background: #49a824; }
+          .objectView .container .tabla tbody td .view:focus {
+            outline: none; }
+
+.ventasView {
+  width: 100%; }
+  .ventasView .container {
+    width: 90%;
+    margin: auto; }
+    .ventasView .container .ventas {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .ventasView .container .ventas .cardVenta {
+        width: 20%;
+        margin: 2%;
+        padding: 8px;
+        background: #033f3a;
+        border: none;
+        border-radius: 8px;
+        color: #fff;
+        line-height: 28px;
+        height: 130px;
+        overflow: hidden; }
+        .ventasView .container .ventas .cardVenta:hover {
+          height: auto;
+          overflow: visible; }
+        .ventasView .container .ventas .cardVenta .btnDetalles {
+          width: 100%;
+          margin: auto;
+          padding: 5px;
+          border: none;
+          border-radius: 5px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          color: #fff;
+          background: #f59403; }
+          .ventasView .container .ventas .cardVenta .btnDetalles:hover {
+            background: #f16d01; }
+        .ventasView .container .ventas .cardVenta .tabla {
+          width: 100%;
+          font-size: 15px;
+          position: relative;
+          transition: 00.5s;
+          opacity: 0;
+          visibility: hidden;
+          text-align: center; }
+        .ventasView .container .ventas .cardVenta:hover .tabla {
+          opacity: 1;
+          visibility: visible; }
+
+.alerta {
+  width: 60%;
+  margin: auto;
+  padding: 8px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  text-align: center;
+  color: #fff;
+  background: #383838;
+  border: none;
+  border-radius: 12px; }
+
+.alerta-error {
+  background: #e00202; }
+
+.alerta-exito {
+  background: #37c400; }
+
+.user-container {
+  width: 100%; }
+  .user-container .container-card {
+    width: 80%;
+    margin: auto; }
+    .user-container .container-card .userCard {
+      width: 60%;
+      margin: auto;
+      margin-top: 22px;
+      padding: 20px;
+      border-radius: 12px;
+      background: #033f3a;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .user-container .container-card .userCard .texto {
+        width: 50%; }
+        .user-container .container-card .userCard .texto p {
+          font-size: 20px;
+          margin-bottom: 12px;
+          color: #fff; }
+      .user-container .container-card .userCard .image {
+        width: 50%; }
+        .user-container .container-card .userCard .image img {
+          width: 100%;
+          margin: auto; }
+
+@media screen and (max-width: 1200px) {
+  #homeUser .container .opciones {
+    float: right;
+    left: 100px; } }
+@media screen and (max-width: 1010px) {
+  #homeUser {
+    width: 100%; }
+    #homeUser .container {
+      width: 90%; }
+      #homeUser .container .cardPerfil {
+        width: 30%;
+        float: none; }
+      #homeUser .container .opciones {
+        float: none;
+        margin-right: 300px;
+        width: 600px; }
+
+  .register .container {
+    width: 90%; }
+    .register .container form .container .datos input[type="file"], .register .container form .container .datos label {
+      width: 100%;
+      margin: auto; }
+    .register .container form .container .datos input[type="submit"] {
+      width: 100%; } }
 @media screen and (max-width: 800px) {
   #recomendaciones .container .recomendaciones .tarjetas {
     width: 100%; }
@@ -305,13 +599,22 @@ footer {
 
   #homeUser .container .cardPerfil {
     width: 50%; }
-  #homeUser .container .opciones details summary {
-    font-size: 18px;
-    padding: 5px 18px; }
-  #homeUser .container .opciones details ul li {
-    padding: 0px; }
-    #homeUser .container .opciones details ul li a {
-      font-size: 18px; } }
+  #homeUser .container .opciones {
+    width: 475px;
+    position: relative;
+    right: 400px; }
+    #homeUser .container .opciones details summary {
+      font-size: 18px;
+      padding: 5px 18px; }
+    #homeUser .container .opciones details ul li {
+      padding: 0px; }
+      #homeUser .container .opciones details ul li a {
+        font-size: 18px; }
+
+  .user-container .container-card {
+    width: 90%; }
+    .user-container .container-card .userCard {
+      width: 80%; } }
 @media screen and (max-width: 600px) {
   header .container .principal .btnSobre a {
     margin-left: 65%;
@@ -327,13 +630,40 @@ footer {
 
   #homeUser .container .cardPerfil {
     width: 70%; }
-  #homeUser .container .opciones details summary {
-    font-size: 15px;
-    padding: 5px 15px; }
-  #homeUser .container .opciones details ul li {
-    padding: 0px; }
-    #homeUser .container .opciones details ul li a {
-      font-size: 15px; } }
+  #homeUser .container .opciones {
+    width: 400px;
+    transform: translateX(-50px); }
+    #homeUser .container .opciones details summary {
+      font-size: 15px;
+      padding: 5px 15px; }
+    #homeUser .container .opciones details ul li {
+      padding: 0px; }
+      #homeUser .container .opciones details ul li a {
+        font-size: 15px; }
+
+  .register .container form {
+    width: 90%; }
+    .register .container form .container .datos {
+      width: 90%;
+      margin: auto; }
+      .register .container form .container .datos input[type="text"], .register .container form .container .datos input[type="number"], .register .container form .container .datos select {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 10px; }
+
+  .objectView .container {
+    width: 90%; }
+    .objectView .container .tabla {
+      width: 100%; }
+      .objectView .container .tabla .image {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute; }
+
+  .user-container .container-card {
+    width: 100%; }
+    .user-container .container-card .userCard {
+      width: 90%; } }
 @media screen and (max-width: 460px) {
   header .container nav ul li {
     padding: 5px 8px; }
@@ -342,13 +672,37 @@ footer {
 
   #homeUser .container .cardPerfil {
     width: 80%; }
-  #homeUser .container .opciones details summary {
-    font-size: 12px;
-    padding: 5px 12px; }
-  #homeUser .container .opciones details ul li {
-    padding: 0px; }
-    #homeUser .container .opciones details ul li a {
-      font-size: 12px; } }
+  #homeUser .container .opciones {
+    width: 250px;
+    transform: translateX(-50px); }
+    #homeUser .container .opciones details summary {
+      font-size: 12px;
+      padding: 5px 12px; }
+    #homeUser .container .opciones details ul li {
+      padding: 0px; }
+      #homeUser .container .opciones details ul li a {
+        font-size: 12px; }
+
+  .objectView .container {
+    width: 100%; }
+    .objectView .container .tabla {
+      font-size: 12px;
+      width: 100%; }
+      .objectView .container .tabla .btn {
+        font-size: 13px; }
+
+  .user-container .container-card {
+    width: 98%; }
+    .user-container .container-card .userCard {
+      width: 80%;
+      display: flex;
+      flex-direction: column-reverse; }
+      .user-container .container-card .userCard .image {
+        width: 60%;
+        margin: auto; }
+        .user-container .container-card .userCard .image img {
+          width: 100%;
+          margin: auto; } }
 @media screen and (max-width: 380px) {
   header .container .principal .btnSobre a {
     margin-left: 65%;

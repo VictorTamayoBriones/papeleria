@@ -1,0 +1,33 @@
+.user-container{
+    width: 100%;
+    .container-card{
+        width: 80%;
+        margin: auto;
+        .userCard{
+            width: 60%;
+            margin: auto;
+            margin-top: 22px;
+            padding: 20px;
+            border-radius: 12px;
+            background: $verdeOscuro;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .texto{
+                width: 50%;
+                p{
+                    font-size: 20px;
+                    margin-bottom: 12px;
+                    color:#fff;
+                }
+            }
+            .image{
+                width: 50%;
+                img{
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+}

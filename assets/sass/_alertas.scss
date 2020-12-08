@@ -1,0 +1,20 @@
+.alerta{
+    width: 60%;
+    margin: auto;
+    padding: 8px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    text-align: center;
+    color:#fff;
+    background: rgb(56, 56, 56);
+    border: none;
+    border-radius: 12px;
+}
+
+.alerta-error{
+    background: $rojo;
+}
+
+.alerta-exito{
+    background: $verde;
+}

@@ -7,9 +7,22 @@
 $gris: #2b2b2b;
 $azul: #0f6db9;
 $azulHover: #004696;
+$rojo: #e00202;
+$rojoHover: #cf0000;
+$amarillo: #f59403;
+$amarilloHover: #f16d01;
+$verde: #37c400;
+$verdeHover: #49a824;
+$verdeOscuro:#033f3a;
+$verdeOscuroHover:#07665e;
 .clearfix{
     clear: both;
 }
 body{
     background: #fff;
+}
+.ocultar{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
 }

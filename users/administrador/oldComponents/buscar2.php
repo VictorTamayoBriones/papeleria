@@ -1,4 +1,4 @@
-<?php require_once "../assets/includes/navlogin.php" ?>
+<?php require_once "../assets/includes/nav.php" ?>
 
 </br>
 <div class="catalogo">
