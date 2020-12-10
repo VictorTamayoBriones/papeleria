@@ -16,6 +16,7 @@ buscar.addEventListener("keyup",function(e){
         
         if(valor == ""){
             e.parentNode.removeAttribute('class', 'ocultar');
+            e.parentNode.setAttribute('class', 'cardVenta');
         }
         
     })},!1);

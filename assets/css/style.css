@@ -386,6 +386,11 @@ footer {
               outline: none; }
             .register .container form .container .datos .añadir:hover {
               background: #07665e; }
+          .register .container form .container .datos .otro {
+            width: 100%;
+            padding: 0px; }
+            .register .container form .container .datos .otro input[type="text"], .register .container form .container .datos .otro input[type="number"], .register .container form .container .datos .otro input[type="file"], .register .container form .container .datos .otro input[type="email"], .register .container form .container .datos .otro input[type="password"], .register .container form .container .datos .otro label, .register .container form .container .datos .otro select {
+              width: 40%; }
 
 .return {
   padding: 10px;

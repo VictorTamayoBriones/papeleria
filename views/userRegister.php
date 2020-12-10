@@ -33,7 +33,6 @@
 
                         <!--<input type="text" placeholder="administrador / empleado" id="userType" name="userType">-->
                         <select name="userType" id="userType">
-
                             <option value="cargo">Cargo de usuario</option>
                             <option value="administrador">Administrador</option>
                             <option value="empleado">Empleado</option>

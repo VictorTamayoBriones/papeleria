@@ -97,6 +97,13 @@
                             background: $verdeOscuroHover;
                         } 
                     }
+                    .otro{
+                        width: 100%;
+                        padding: 0px;
+                        input[type="text"],input[type="number"],input[type="file"],input[type="email"],input[type="password"],label,select{
+                            width: 40%;
+                        }
+                    }
                 }
             }
         }
